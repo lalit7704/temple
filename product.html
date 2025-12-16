@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Page with Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .product-container { max-width: 900px; margin: auto; }
+    .main-image { width: 100%; max-width: 400px; border-radius: 12px; }
+    .thumbnails { display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap; }
+    .thumbnails img {
+      width: 70px; height: 70px; object-fit: cover;
+      border: 2px solid transparent; border-radius: 8px;
+      cursor: pointer; transition: 0.2s;
+    }
+    .thumbnails img.active,
+    .thumbnails img:hover {
+      border-color: #28a745;
+    }
+    .product-info { margin-top: 20px; }
+    .product-price { font-size: 24px; font-weight: bold; color: green; }
+    .buy-btn {
+      display: inline-block; margin-top: 20px; padding: 12px 24px;
+      background-color: #28a745; color: white; text-decoration: none;
+      border-radius: 6px; font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="product-container">
+    <img id="main-image" class="main-image" src="" alt="Product Image">
+    <div class="thumbnails" id="thumbnail-gallery"></div>
+
+    <div class="product-info">
+      <h1 id="product-title">Loading title...</h1>
+      <div id="product-description"></div>
+      <p class="product-price">₹<span id="product-price">...</span></p>
+      <a id="buy-now-btn" class="buy-btn" href="#" target="_blank">Buy Now</a>
+    </div>
+  </div>
+
+  <script>
+    const domain = "dummy7704.myshopify.com"; // ✅ FIXED (no https://)
+    const token = "e0e23f3b5e1ec22b52de4df405cd979"; // ✅ Your token
+    const handle = "gummies"; // ✅ FIXED (no trailing space)
+
+    const query = `
+    {
+      product(handle: "${handle}") {
+        title
+        descriptionHtml
+        images(first: 10) {
+          edges {
+            node { url }
+          }
+        }
+        variants(first: 1) {
+          edges {
+            node {
+              id
+              price { amount }
+            }
+          }
+        }
+      }
+    }`;
+
+    fetch(`https://${domain}/api/2023-04/graphql.json`, {
+      method: "POST",
+      headers: {
+        "X-Shopify-Storefront-Access-Token": token,
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ query })
+    })
+    .then(res => res.json())
+    .then(data => {
+      const product = data.data.product;
+      if (!product) {
+        document.body.innerHTML = "<h2>❌ Product not found</h2>";
+        return;
+      }
+
+      document.getElementById("product-title").textContent = product.title;
+      document.getElementById("product-description").innerHTML = product.descriptionHtml;
+      document.getElementById("product-price").textContent = product.variants.edges[0].node.price.amount;
+
+      const variantId = product.variants.edges[0].node.id;
+      const variantGID = variantId.split("/").pop();
+      const checkoutURL = `https://${domain}/cart/${variantGID}:1`;
+      document.getElementById("buy-now-btn").href = checkoutURL;
+
+      const mainImage = document.getElementById("main-image");
+      const thumbnails = document.getElementById("thumbnail-gallery");
+
+      product.images.edges.forEach((img, index) => {
+        const thumb = document.createElement("img");
+        thumb.src = img.node.url;
+        if (index === 0) {
+          mainImage.src = img.node.url;
+          thumb.classList.add("active");
+        }
+        thumb.addEventListener("click", () => {
+          mainImage.src = img.node.url;
+          document.querySelectorAll(".thumbnails img").forEach(el => el.classList.remove("active"));
+          thumb.classList.add("active");
+        });
+        thumbnails.appendChild(thumb);
+      });
+    })
+    .catch(err => {
+      console.error("Error loading product:", err);
+      document.body.innerHTML = "<h2>❌ Failed to load product</h2>";
+    });
+  </script>
+</body>
+</html>
