@@ -512,7 +512,7 @@ body{
 }
 .b-b01 p{
 	text-align: center;
-	padding: 30px;
+	padding: 5px;
 }
 
 .mf01{
@@ -1391,7 +1391,9 @@ input:focus{
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .6);
     box-shadow: 0 0 8px rgba(0,0,0,.6);
 }
-
+.b-b01.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-12 h2 {
+    font-size: 20px;
+}
 @media(max-width: 768px) {
 
   .col-sm-12.col-md-4 {
@@ -1402,9 +1404,7 @@ input:focus{
     flex-direction: column;
 }
 
-.b-b01.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-12 h2 {
-    font-size: 1.5rem;
-}
+
   .col-sm-6.col-md-4 {
     max-width: 114px;
 }
