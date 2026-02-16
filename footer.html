@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>  
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>hindu temple</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+
+</head>
+<body>
+
+<section class="icons">
+		<ul>
+			
+			<li><a href="https://api.whatsapp.com/send?phone=7357346016&text=what'sapp%20number"> <img src="photo/w.png"></a></li>
+			<li class="back-top"><a href="#" > <img src="photo/u.png"></a></li>
+			
+			
+		</ul>
+		
+	</section>
+    	<footer class="temple-footer">
+ 		<div class="container">
+ 			<div class="row">
+ 				<div class="temple-footer-box01 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+ 					<ul class=" row col-xl-5 col-lg-5  col-md-5 col-sm-12 col-12" >
+ 						<li><a href="index.html">Home</a></li>
+ 						<li><a href="aashram.html">Ashram</a></li>
+ 						<li><a href="#">About</a></li>
+ 						<li><a href="#">Shop</a></li>
+ 					</ul>
+ 				</div>
+ 				<div class="temple-footer-box02 col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+ 					<a href="#" ><img src="photo/logo-2.webp"></a>
+ 				</div>
+ 				<div class="temple-footer-box03 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+ 					<ul class=" row col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+ 						<li><a href="event.html">Events</a></li>
+ 						<li><a href="gallery.html">Gallery</a></li>
+ 						<li><a href="#">News</a></li>
+ 						<li><a href="contect.html">Contacts</a></li>
+ 					</ul>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</footer>
+
+ 	
+
+<div class="heart">
+   	<p>
+   		Made  by <a href="index.html"> " lalit kachhawaha "</a>
+   	</p>
+   </div>
+
+
+ 	
+
+
+	<!-- jQuery library -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+	<script src="js/owl.carousel.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+	<script >
+
+
+
+				$(document).ready(function(){
+
+
+
+			$('.bar').click(function(){
+		   		$(".side-bar").toggleClass("slide01");
+		   });
+
+		    $('.close').click(function(){
+		   		$(".side-bar").toggleClass("slide01");
+		   });
+
+
+		   $(".owl-carousel").owlCarousel({
+			 	items:1,
+			 	loop:true,
+			 	mouseDrag:true,
+			 	nav:true,
+			 	dots:true,
+			 	autoplay:true,
+			 	autoplayTimeout:3000,	
+			 	// autoplayHoverPause:true,
+			 	
+			 }); 	
+
+
+		    $(window).scroll(function(){
+				var x = $(window).scrollTop();
+				if( x > 50){
+					$('.back-top').addClass('h');
+				}else{ $('.back-top').removeClass('h'); }
+			});
+
+
+			$(".back-top").click(function() {
+    			$("html, body").animate({scrollTop: 0}, 1000);
+ 			});
+
+
+
+
+
+
+
+
+
+
+		});
+
+
+
+
+
+
+	</script>
+</body>
+</html>
