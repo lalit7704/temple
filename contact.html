@@ -16,145 +16,7 @@
 
 </head>
 <body>
-
-
-<section class="icons">
-		<ul>
-			
-			<li><a href="https://api.whatsapp.com/send?phone=7357346016&text=what'sapp%20number"> <img src="photo/w.png"></a></li>
-			<li class="back-top"><a href="#" > <img src="photo/u.png"></a></li>
-			
-			
-		</ul>
-		
-	</section>
-	
-   
-<section class="top-header">
-	<div class="container">
-		<div class="row">
-			<div class="th-left01 col-xl-10 col-lg-10 col-md-10 
-			col-sm-12 col-12">
-				<ul >
-					<li><a href=""><i class="fa-solid fa-location-dot"></i> 838 Andy Street, Madison, NJ 08003</a></li>
-					<li><a href=""> <i class="fa-solid fa-headphones"></i> Support 0100-5200-369</a></li>
-				</ul>
-
-			</div>
-			<div class="th-right01 row col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12 ">
-
-				<ul>
-					<li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-					<li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-					<li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-				</ul>				
-			</div>
-		</div>
-	</div>
-</section>
-	
-	<nav class="buttom-navbar">
-		<div class="container">
-			<div class="row">
-				<div class="btn-left01  lr01  col-xl-5 col-lg-5 col-md-5  ">
-					<ul class="row">
-						<li><a href="index.html" >Home</a></li>
-						<li><a href="aashram.html" >Ashram</a></li>
-						<li class="third-a"><a href="#" >About
-								<div class="about-submenu">
-									<ul >
-										<li><a href="#">Features</a></li>
-										<li><a href="#">Programs</a></li>
-										<li><a href="#">Gallery</a></li>
-										<li><a href="#">Leadership</a></li>
-						
-									</ul>
-								</div>
-
-						</a></li>
-						<li><a href="#">Shop</a></li>
-					</ul>
-				</div>
-				<div class="logo row col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12 ">
-					<a href="index.html"><img src="photo/logo-2.webp"></a>
-					<a href="#" class="bar"><i class="fa-solid fa-bars"></i></a>
-				</div>
-				<div class="btn-right01 lr01 col-xl-5 col-lg-5 col-md-5  ">
-					<ul class="row">
-						<li><a href="event.html">Events</a></li>
-						<li><a href="gallery.html">Gallery</a></li>
-						<li class="third-a"><a href="#">News
-							<div class="about-submenu about-submenu01">
-									<ul >
-										<li><a href="#"> Posts</a></li>
-										<li><a href="#">Classic</a></li>
-										<li><a href="#">Portfolio </a></li>
-										<li><a href="#">Chess </a></li>
-						
-									</ul>
-								</div>
-
-						</a></li>
-						<li><a href="contact.html" class="first-a">Contacts</a></li>
-						<li ></li>
-					</ul>
-
-				</div>
-
-				
-			</div>
-		</div>
-	</nav>
-
-	
-   <section class="side-bar col-sm-12 col-12">
-   		<div class="croseicon">
-   			<a href="#" class="close"><i class="fa-solid fa-xmark"></i></a>
-   		</div>
-   		<div class="side-bar-img">
-   			<img src="photo/logo-3.webp">
-   		</div>
-   		<ul>
-   			<li><a href="index.html">Home</a></li>
-   			<li><a href="#">Features</a></li>
-   			<li class="sidebar-third-a"><a href="#">About <i class="fa-solid fa-angle-down"></i>
-   				<div class=" sidebar-about-submenu-01">
-					<ul>
-						<li><a href="#">Ashram</a></li>
-						<li><a href="#">Programs</a></li>
-						<li><a href="#">Gallery</a></li>
-						<li><a href="#">Leadership</a></li>		
-					</ul>
-				</div>
-
-   			</a></li>
-   			<li><a href="#">Shop</a></li>
-   			<li><a href="event.html">Events</a></li>
-   			<li><a href="gallery.html">Gallery</a></li>
-   			<li class="sidebar-third-a"><a href="#">News <i class="fa-solid fa-angle-down"></i> 	
-   				<div class=" sidebar-about-submenu-02">
-					<ul >
-						<li><a href="#">Ashram</a></li>
-						<li><a href="#">Programs</a></li>
-						<li><a href="#">Gallery</a></li>
-						<li><a href="#">Leadership</a></li>		
-					</ul>
-				</div>
-   			</a></li>
-   			<li><a href="contact.html">Contacts</a></li>
-   		</ul>
-   		<div class="search-box">
-   			<input type="text" placeholder="search" class="search-box01" >
-   			<a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-   		</div>
-   		<div class="last-icon col-sm-12 col-12">
-   			<ul class="row">
-   				<li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-   				<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-   				<li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-   			</ul>
-   		</div>
-   </section>
+<div id="header"></div>
 
 
 
@@ -307,5 +169,15 @@
 			 }); 	
 		});
 	</script>
+	<script>
+  async function includeHTML(id, file) {
+    const res = await fetch(file);
+    const text = await res.text();
+    document.getElementById(id).innerHTML = text;
+  }
+
+  includeHTML("header", "header.html");
+  includeHTML("footer", "footer.html");
+</script>
 </body>
 </html>
