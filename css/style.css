@@ -493,15 +493,15 @@ body{
 	color: red;
 }
 .b-b01-img01{
-	background-image: url(../photo/01.jpg);
+	background-image: url(../photo/01.webp);
 }
 
 
 .b-b01-img02{
-	background-image: url(../photo/02.jpg);
+	background-image: url(../photo/02.webp);
 }
 .b-b01-img03{
-	background-image: url(../photo/03.jpg);
+	background-image: url(../photo/03.webp);
 }
 .b-b01 h2{
 	text-align: center;
