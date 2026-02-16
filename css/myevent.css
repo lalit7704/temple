@@ -262,9 +262,9 @@ body{
 	color: white;
 	text-decoration: none;
 }
-.first-a{
+/* .first-a{
 	color: white!important;
-}
+} */
 .third-a:hover .about-submenu{
 	display: block;
 }
