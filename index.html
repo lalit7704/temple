@@ -598,7 +598,8 @@
 
   includeHTML("header", "header.html");
   includeHTML("footer", "footer.html");
-</script><script>
+</script>
+<script>
   async function includeHTML(id, file) {
     const res = await fetch(file);
     const text = await res.text();
