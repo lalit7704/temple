@@ -29,9 +29,7 @@ body{
 .back-top{
 	display: none;
 }
-.icons ul li a img{
-	/*width: 10px;*/
-}
+
 .w{
 	margin-right: 10px;
 }
@@ -790,7 +788,7 @@ body{
 		flex-direction: column;
 		text-align: center;
 		margin: 0 auto;
-		padding-bottom: ;
+	
 	}
 	.temple-footer-box03 ul li a{
 		padding: 10px;
