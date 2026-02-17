@@ -372,7 +372,7 @@ body{
 
 
 .slider01{
-	background-image: url(../photo/owl03.jpg);
+	background-image: url(../photo/owl03.webp);
 	background-repeat: no-repeat;
 	background-size: cover;
 	
@@ -399,7 +399,7 @@ body{
 	text-align: center;
 }
 .slider02{
-	background-image: url(../photo/owl01.jpg);
+	background-image: url(../photo/owl01.webp);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -407,7 +407,7 @@ body{
 }
 
 .slider03{
-	background-image: url(../photo/e01.jpg);
+	background-image: url(../photo/e01.webp);
 	background-repeat: no-repeat;
 	background-size: cover;
 	
