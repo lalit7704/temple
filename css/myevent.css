@@ -401,7 +401,7 @@ body{
 }
 
 .ef-img01{
-	background-image: url(../photo/ev01.jpg);
+	background-image: url(../photo/ev01.webp);
 	height: 150px;
 	background-position: center bottom ;
 	position: relative;
@@ -411,7 +411,7 @@ body{
 
 }
 .ef-img02{
-	background-image: url(../photo/ev02.jpg);
+	background-image: url(../photo/ev02.webp);
 	height: 150px;
 	background-position: center bottom ;
 	position: relative;
@@ -421,7 +421,7 @@ body{
 
 }
 .ef-img03{
-	background-image: url(../photo/ev03.jpg);
+	background-image: url(../photo/ev03.webp);
 	height: 150px;
 	background-position: center bottom ;
 	position: relative;
@@ -431,7 +431,7 @@ body{
 
 }
 .ef-img04{
-	background-image: url(../photo/ev04.jpg);
+	background-image: url(../photo/ev04.webp);
 	height: 150px;
 	background-position: center bottom ;
 	position: relative;
