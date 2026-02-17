@@ -35,9 +35,7 @@ body{
 .back-top{
 	display: none;
 }
-.icons ul li a img{
-	/*width: 10px;*/
-}
+
 .w{
 	margin-right: 10px;
 }
@@ -220,19 +218,6 @@ body{
 	z-index: 2;
 	background-color: transparent;
 }
-.btn-left01{
-	/*background:purple ;*/
-}
-
-
-
-.logo{
-	/*background-color: purple;*/
-}
-
-
-
-
 
 .btn-right01{
 	/*background-color:purple;*/
@@ -605,8 +590,6 @@ body{
 
 }
 
-
-
 .gallery-top span{
 	font-size: 51px;
     font-family: initial;
@@ -621,10 +604,6 @@ body{
 .g-photo-left01 img{
 	width: 100%;
 	padding: 15px;
-}
-
-.g-photo-left01{
-    /*padding: 0!important;*/
 }
 .g-photo-right01-lpart img{
 	width: 100%;

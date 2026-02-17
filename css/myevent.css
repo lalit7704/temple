@@ -212,15 +212,6 @@ body{
 	z-index: 2;
 	background-color: transparent;
 }
-.btn-left01{
-	/*background:purple ;*/
-}
-
-
-
-.logo{
-	/*background-color: purple;*/
-}
 
 
 
@@ -498,9 +489,6 @@ body{
 .may p{
 	font-size: 20px;
 	margin-top: -15px;
-}
-.ef-name{
-	/*background: red;*/
 }
 .ef-name h4{
 	text-align: left;
