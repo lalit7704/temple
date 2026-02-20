@@ -131,7 +131,8 @@
 
 
 
-	<script>
+<script src="app.js" defer></script>
+<script>
   async function includeHTML(id, file) {
     const res = await fetch(file);
     const text = await res.text();
