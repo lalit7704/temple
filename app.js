@@ -56,6 +56,32 @@ window.addEventListener('scroll', function () {
   }
 });
 
+// Poll for back-to-top button existence (handles async header loading)
+function initBackToTop() {
+  var checkInterval = setInterval(function() {
+    var backTopBtn = document.querySelector('.back-top');
+    if (backTopBtn) {
+      clearInterval(checkInterval);
+      // Initial check in case page is loaded mid-scroll
+      if (window.scrollY > 50) {
+        backTopBtn.classList.add('h');
+      }
+    }
+  }, 100);
+  
+  // Stop polling after 5 seconds to prevent infinite checking
+  setTimeout(function() {
+    clearInterval(checkInterval);
+  }, 5000);
+}
+
+// Initialize when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initBackToTop);
+} else {
+  initBackToTop();
+}
+
 // Contact form submission handler - sends to lalit@gmail.com via FormSubmit.co
 function handleFormSubmit(event, formId) {
   event.preventDefault();
