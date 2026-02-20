@@ -82,7 +82,7 @@ function handleFormSubmit(event, formId) {
       messageDiv.style.backgroundColor = '#d4edda';
       messageDiv.style.color = '#155724';
       messageDiv.style.border = '1px solid #c3e6cb';
-      messageDiv.innerHTML = '<i class="fa-solid fa-check-circle"></i> Message sent successfully! We will get back to you soon at lalit@gmail.com';
+      messageDiv.innerHTML = '<i class="fa-solid fa-check-circle"></i> Message sent successfully! We will get back to you soon.';
       form.reset();
       setTimeout(function() {
         messageDiv.style.display = 'none';
