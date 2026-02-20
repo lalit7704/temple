@@ -363,7 +363,7 @@ body{
 }
 
 
-.slider01{
+.slider01, .slider02, .slider03{`nbackground-repeat: no-repeat;`nbackground-size: cover;`nbackground-position: center;`nmin-height: 600px;`n}`n`n.slider01{
 	background-image: url(../photo/owl03.webp);
 	background-repeat: no-repeat;
 	background-size: cover;
