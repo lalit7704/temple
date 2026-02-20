@@ -1,0 +1,79 @@
+<div id="coverage-tool" style="max-width:600px;margin:auto;font-family:Arial;padding:20px;border:1px solid #ddd;border-radius:10px;">
+    <h2>Free Mental Health Insurance Coverage Checker</h2>
+    <p>Select your details to see typical coverage guidance.</p>
+     
+      <label><strong>Insurance Provider</strong></label>
+    <select id="insurance" style="width:100%;padding:10px;margin-bottom:15px;">
+    <option value="">Select Insurance</option>
+    <option value="bcbs">Anthem / BCBS</option>
+    <option value="aetna">Aetna</option>
+    <option value="cigna">Cigna</option>
+    <option value="uhc">UnitedHealthcare</option>
+    <option value="medicaid">Medicaid</option>
+    <option value="medicare">Medicare</option>
+    </select>
+     
+      <label><strong>State</strong></label>
+    <select id="state" style="width:100%;padding:10px;margin-bottom:15px;">
+    <option value="ct">Connecticut</option>
+    <option value="ny">New York</option>
+    <option value="ma">Massachusetts</option>
+    <option value="nj">New Jersey</option>
+    <option value="ri">Rhode Island</option>
+    </select>
+     
+      <label><strong>Service Needed</strong></label>
+    <select id="service" style="width:100%;padding:10px;margin-bottom:20px;">
+    <option value="iop">Intensive Outpatient (IOP)</option>
+    <option value="php">Partial Hospitalization (PHP)</option>
+    <option value="op">Outpatient</option>
+    <option value="res">Residential Treatment</option>
+    </select>
+     
+      <button onclick="checkCoverage()" style="width:100%;padding:12px;background:#0073aa;color:#fff;border:none;border-radius:6px;font-size:16px;">
+        Check Coverage
+    </button>
+     
+      <div id="result" style="margin-top:20px;"></div>
+    </div>
+     
+    <script>
+    function checkCoverage() {
+      const insurance = document.getElementById("insurance").value;
+      const service = document.getElementById("service").value;
+      const resultDiv = document.getElementById("result");
+     
+      if (!insurance) {
+        resultDiv.innerHTML = "<p style='color:red;'>Please select an insurance provider.</p>";
+        return;
+      }
+     
+      let likelihood = "Varies";
+     
+      if (service === "iop") {
+        if (["bcbs", "aetna", "cigna"].includes(insurance)) likelihood = "High";
+        else if (insurance === "uhc") likelihood = "Medium";
+        else likelihood = "Varies";
+      }
+     
+      if (service === "php") likelihood = "Medium";
+      if (service === "op") likelihood = "High";
+      if (service === "res") likelihood = "Varies";
+     
+      resultDiv.innerHTML = `
+    <div style="background:#f4f8fb;padding:15px;border-radius:8px;">
+    <h3>Typical Coverage: ${likelihood}</h3>
+    <p>Most plans often cover this level of care when medical necessity criteria are met.</p>
+    <strong>Common Requirements:</strong>
+    <ul>
+    <li>Prior authorization may be required</li>
+    <li>Clinical documentation needed</li>
+    <li>In-network providers preferred</li>
+    </ul>
+    <p style="font-size:13px;color:#666;">
+            This result is informational only and not a guarantee of coverage.
+    </p>
+    </div>
+      `;
+    }
+    </script>
