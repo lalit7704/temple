@@ -297,12 +297,13 @@ body{
 		text-decoration: none!important;
 }
 .bar{
- 		display: none;
- 		padding-left: 250px;
- 		padding-top: 15px;
- 		font-size: 30px;
- 		color: pink;
- 	}
+		display: none;
+		/* Desktop par extra clickable area hata diya */
+		padding: 0;
+		margin-left: 10px;
+		font-size: 30px;
+		color: pink;
+	}
 
 .bar:hover{
 	color: pink;
@@ -1182,9 +1183,10 @@ input:focus{
 
 	.tra001{
 		padding-bottom: 50px;
+		padding-top: 200px;
 	}
     .tra001 h1{
-  		padding-top: 150px;
+  		
   		font-size: 17px;
  	}
 	.program span{
