@@ -375,7 +375,9 @@ body{
 	width:100%;
 	height: 100%;
 	padding-bottom: 100px;
-	padding-top: 20px;
+	padding-top: 200px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 .tra001 h1{
 	color: white;
@@ -1417,10 +1419,4 @@ div#google_translate_element {
 }
 
 
-    .tra001 {
-        padding-bottom: 50px;
-        padding-top: 200px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
+  
