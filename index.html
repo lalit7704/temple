@@ -344,23 +344,23 @@
 				</div>
 
 				<div class="contectpage-right01">
-					<div class="cr-input">
-						<input class="name-email gra" type="text" placeholder="Enter your name">
-						&nbsp;&nbsp;&nbsp;
-						<input class="name-email gra" type="email" placeholder="Enter your e‑mail">
-					</div>
-					<input class="address gra" type="text" placeholder="City / Temple you want to know about">
-
-
-					<textarea placeholder="Write your message or question here" cols="50" rows="4" class="message "></textarea>
-
-					<input type="submit" value="Send Message" class="sand01 gra">
-
-
-					<!-- <div class="focus01">
-							Enter your Name
+					<form id="contactFormIndex" action="https://formsubmit.co/lalit@gmail.com" method="POST" onsubmit="handleFormSubmit(event, 'contactFormIndex')">
+						<input type="hidden" name="_subject" value="New Contact Form Submission from Website">
+						<input type="hidden" name="_captcha" value="false">
+						<input type="hidden" name="_next" value="">
+						<input type="hidden" name="_template" value="box">
+						<div class="cr-input">
+							<input class="name-email gra" type="text" name="name" placeholder="Enter your name" required>
+							&nbsp;&nbsp;&nbsp;
+							<input class="name-email gra" type="email" name="email" placeholder="Enter your e‑mail" required>
 						</div>
- -->
+						<input class="address gra" type="text" name="subject" placeholder="City / Temple you want to know about" required>
+
+						<textarea name="message" placeholder="Write your message or question here" cols="50" rows="4" class="message" required></textarea>
+
+						<input type="submit" value="Send Message" class="sand01 gra">
+						<div id="formMessageIndex" style="margin-top: 15px; padding: 10px; display: none; border-radius: 5px;"></div>
+					</form>
 				</div>
 			</div>
 		</div>

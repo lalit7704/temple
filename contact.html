@@ -51,23 +51,23 @@
 					</div>
 
 					<div class="contectpage-right01">
-						<div class="cr-input">
-							<input class="name-email gra" type="text" placeholder="Enter Your Name">
-							&nbsp;&nbsp;&nbsp;
-							<input class="name-email gra"  type="email" placeholder="Enter Your E-Mail">
-						</div>
-						<input class="address gra"  type="text" placeholder="Enter Your Address">
+						<form id="contactFormPage" action="https://formsubmit.co/lalit@gmail.com" method="POST" onsubmit="handleFormSubmit(event, 'contactFormPage')">
+							<input type="hidden" name="_subject" value="New Contact Form Submission from Website">
+							<input type="hidden" name="_captcha" value="false">
+							<input type="hidden" name="_next" value="">
+							<input type="hidden" name="_template" value="box">
+							<div class="cr-input">
+								<input class="name-email gra" type="text" name="name" placeholder="Enter Your Name" required>
+								&nbsp;&nbsp;&nbsp;
+								<input class="name-email gra" type="email" name="email" placeholder="Enter Your E-Mail" required>
+							</div>
+							<input class="address gra" type="text" name="subject" placeholder="Enter Your Address" required>
 
+							<textarea name="message" placeholder="Enter Your Message" cols="50" rows="4" class="message" required></textarea>
 
-						<textarea placeholder="Enter Your Message" cols="50" rows="4" class="message "></textarea>
-
-						<input type="submit"  value="Submit" class="sand01 gra">
-
-
-						<!-- <div class="focus01">
-							Enter your Name
-						</div>
- -->
+							<input type="submit" value="Submit" class="sand01 gra">
+							<div id="formMessagePage" style="margin-top: 15px; padding: 10px; display: none; border-radius: 5px;"></div>
+						</form>
 					</div>
 				</div>
 			</div>
