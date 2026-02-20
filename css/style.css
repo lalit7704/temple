@@ -535,10 +535,7 @@ body{
 
 }
 
-.wel-left01.col-xl-6.col-lg-6.col-md-6.col-sm-12.col-12 {
-    display: flex;
-    align-items: center;
-}
+
 .welcome{
 	width: 100%;
 	
@@ -1427,3 +1424,7 @@ div#google_translate_element {
 
 
   
+.wel-left01 {
+    display: flex!important;
+    align-items: center!important;
+}
