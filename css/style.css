@@ -386,6 +386,9 @@ body{
 	
 	font-size: 60px;
 }
+.tra001 h1{
+	text-align: center;
+}
 .tra001 h6{
 	color:pink;
 	text-transform: uppercase;
