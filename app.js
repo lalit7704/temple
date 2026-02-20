@@ -82,6 +82,44 @@ if (document.readyState === 'loading') {
   initBackToTop();
 }
 
+// Initialize Owl Carousel slider
+function initOwlCarousel() {
+  var carousel = document.querySelector('.owl-carousel');
+  if (carousel && typeof jQuery !== 'undefined' && jQuery.fn.owlCarousel) {
+    jQuery(carousel).owlCarousel({
+      items: 1,
+      loop: true,
+      mouseDrag: true,
+      nav: true,
+      dots: true,
+      autoplay: true,
+      autoplayTimeout: 3000
+    });
+  }
+}
+
+// Poll for jQuery and owl carousel availability
+function initSliderWhenReady() {
+  var checkInterval = setInterval(function() {
+    if (typeof jQuery !== 'undefined' && jQuery.fn.owlCarousel) {
+      clearInterval(checkInterval);
+      initOwlCarousel();
+    }
+  }, 100);
+  
+  // Stop polling after 10 seconds
+  setTimeout(function() {
+    clearInterval(checkInterval);
+  }, 10000);
+}
+
+// Initialize slider when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initSliderWhenReady);
+} else {
+  initSliderWhenReady();
+}
+
 // Contact form submission handler - sends to lalit@gmail.com via FormSubmit.co
 function handleFormSubmit(event, formId) {
   event.preventDefault();
@@ -124,4 +162,3 @@ function handleFormSubmit(event, formId) {
     messageDiv.innerHTML = '<i class="fa-solid fa-exclamation-circle"></i> Error sending message. Please try again or email us directly at <strong>lalit@gmail.com</strong>';
   });
 }
-
