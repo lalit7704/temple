@@ -56,70 +56,6 @@ window.addEventListener('scroll', function () {
   }
 });
 
-// Poll for back-to-top button existence (handles async header loading)
-function initBackToTop() {
-  var checkInterval = setInterval(function() {
-    var backTopBtn = document.querySelector('.back-top');
-    if (backTopBtn) {
-      clearInterval(checkInterval);
-      // Initial check in case page is loaded mid-scroll
-      if (window.scrollY > 50) {
-        backTopBtn.classList.add('h');
-      }
-    }
-  }, 100);
-  
-  // Stop polling after 5 seconds to prevent infinite checking
-  setTimeout(function() {
-    clearInterval(checkInterval);
-  }, 5000);
-}
-
-// Initialize when DOM is ready
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initBackToTop);
-} else {
-  initBackToTop();
-}
-
-// Initialize Owl Carousel slider
-function initOwlCarousel() {
-  var carousel = document.querySelector('.owl-carousel');
-  if (carousel && typeof jQuery !== 'undefined' && jQuery.fn.owlCarousel) {
-    jQuery(carousel).owlCarousel({
-      items: 1,
-      loop: true,
-      mouseDrag: true,
-      nav: true,
-      dots: true,
-      autoplay: true,
-      autoplayTimeout: 3000
-    });
-  }
-}
-
-// Poll for jQuery and owl carousel availability
-function initSliderWhenReady() {
-  var checkInterval = setInterval(function() {
-    if (typeof jQuery !== 'undefined' && jQuery.fn.owlCarousel) {
-      clearInterval(checkInterval);
-      initOwlCarousel();
-    }
-  }, 100);
-  
-  // Stop polling after 10 seconds
-  setTimeout(function() {
-    clearInterval(checkInterval);
-  }, 10000);
-}
-
-// Initialize slider when DOM is ready
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initSliderWhenReady);
-} else {
-  initSliderWhenReady();
-}
-
 // Contact form submission handler - sends to lalit@gmail.com via FormSubmit.co
 function handleFormSubmit(event, formId) {
   event.preventDefault();
@@ -162,3 +98,4 @@ function handleFormSubmit(event, formId) {
     messageDiv.innerHTML = '<i class="fa-solid fa-exclamation-circle"></i> Error sending message. Please try again or email us directly at <strong>lalit@gmail.com</strong>';
   });
 }
+
