@@ -2,1503 +2,1731 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description"
-		content="Explore Hindu temples, darshan & aarti timings, upcoming events, and a beautiful gallery of sacred places.">
-	<meta name="keywords" content="Hindu Temples, Jyotirlinga, Char Dham, Temple Gallery, Darshan Timings, Temple Events">
-	<meta name="robots" content="index, follow">
-	<link rel="canonical" href="https://www.onemovie.in/">
-	<title>Hindu Temples & Pilgrimage</title>
-	
-	<!-- Google Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-	
-	<!-- Critical CSS -->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	
-	<!-- Non-critical CSS -->
-	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"></noscript>
-	
-	<link rel="preload" href="css/owl.carousel.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<noscript><link rel="stylesheet" href="css/owl.carousel.css"></noscript>
-	
-	<link rel="preload" href="css/owl.theme.default.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<noscript><link rel="stylesheet" href="css/owl.theme.default.css"></noscript>
-	
-	<link rel="icon" href="photo/favicon.ico" type="image/x-icon">
-	
-	<!-- Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-KJ3NX7H5P2"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	  gtag('config', 'G-KJ3NX7H5P2');
-	</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Explore Hindu temples, darshan & aarti timings, upcoming events, and a beautiful gallery of sacred places.">
+    <meta name="keywords" content="Hindu Temples, Jyotirlinga, Char Dham, Temple Gallery, Darshan Timings, Temple Events">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.onemovie.in/">
+    <title>Hindu Temples & Pilgrimage | Divine India</title>
 
-	<style>
-		/* New Section Styles */
-		:root {
-			--primary-color: #8B4513;
-			--secondary-color: #D4A574;
-			--accent-color: #FFD700;
-			--dark-color: #2C1810;
-			--light-color: #FFEFE2;
-			--text-dark: #333;
-			--text-light: #666;
-		}
-		
-		* {
-			font-family: 'Poppins', sans-serif;
-		}
-		
-		h1, h2, h3, h4, h5, h6 {
-			font-family: 'Playfair Display', serif;
-		}
-		
-		/* Section 1: Hero Slider */
-		.hero-section {
-			position: relative;
-			overflow: hidden;
-		}
-		
-		/* Section 2: Quick Stats */
-		.stats-section {
-			background: linear-gradient(135deg, #8B4513 0%, #5D2E0C 100%);
-			padding: 40px 0;
-			color: white;
-		}
-		
-		.stats-item {
-			text-align: center;
-			padding: 20px;
-		}
-		
-		.stats-item i {
-			font-size: 40px;
-			margin-bottom: 15px;
-			color: #FFD700;
-		}
-		
-		.stats-item .counter {
-			font-size: 42px;
-			font-weight: 700;
-			font-family: 'Playfair Display', serif;
-			display: block;
-		}
-		
-		.stats-item span {
-			font-size: 14px;
-			text-transform: uppercase;
-			letter-spacing: 2px;
-		}
-		
-		/* Section 3: Highlights */
-		.highlights-section {
-			padding: 80px 0;
-			background: #FFEFE2;
-		}
-		
-		.section-title {
-			text-align: center;
-			margin-bottom: 50px;
-		}
-		
-		.section-title h6 {
-			color: #8B4513;
-			font-weight: 600;
-			letter-spacing: 4px;
-			text-transform: uppercase;
-			margin-bottom: 15px;
-		}
-		
-		.section-title h2 {
-			font-size: 42px;
-			color: #2C1810;
-			font-weight: 700;
-		}
-		
-		.highlight-card {
-			background: white;
-			border-radius: 15px;
-			overflow: hidden;
-			box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-			transition: all 0.3s ease;
-			height: 100%;
-		}
-		
-		.highlight-card:hover {
-			transform: translateY(-10px);
-			box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-		}
-		
-		.highlight-card .card-image {
-			height: 250px;
-			background-size: cover;
-			background-position: center;
-			position: relative;
-		}
-		
-		.highlight-card .card-overlay {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background: rgba(0,0,0,0.4);
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			opacity: 0;
-			transition: all 0.3s ease;
-		}
-		
-		.highlight-card:hover .card-overlay {
-			opacity: 1;
-		}
-		
-		.highlight-card .card-overlay a {
-			color: white;
-			font-size: 50px;
-			transform: scale(0);
-			transition: all 0.3s ease;
-		}
-		
-		.highlight-card:hover .card-overlay a {
-			transform: scale(1);
-		}
-		
-		.highlight-card .card-content {
-			padding: 25px;
-			text-align: center;
-		}
-		
-		.highlight-card .card-content h3 {
-			color: #2C1810;
-			margin-bottom: 15px;
-			font-size: 24px;
-		}
-		
-		.highlight-card .card-content p {
-			color: #666;
-			line-height: 1.6;
-			margin-bottom: 20px;
-		}
-		
-		.highlight-card .card-content a {
-			display: inline-block;
-			padding: 12px 30px;
-			background: #8B4513;
-			color: white;
-			border-radius: 30px;
-			text-decoration: none;
-			transition: all 0.3s ease;
-		}
-		
-		.highlight-card .card-content a:hover {
-			background: #5D2E0C;
-			transform: translateX(5px);
-		}
-		
-		/* Section 4: Darshan Timings */
-		.timings-section {
-			background: linear-gradient(rgba(44, 24, 16, 0.9), rgba(44, 24, 16, 0.9)), url('photo/04banner.webp');
-			background-size: cover;
-			background-position: center;
-			padding: 80px 0;
-			color: white;
-		}
-		
-		.timing-card {
-			background: rgba(255,255,255,0.1);
-			backdrop-filter: blur(10px);
-			border-radius: 15px;
-			padding: 30px;
-			text-align: center;
-			border: 1px solid rgba(255,255,255,0.2);
-			transition: all 0.3s ease;
-		}
-		
-		.timing-card:hover {
-			background: rgba(255,255,255,0.2);
-			transform: translateY(-5px);
-		}
-		
-		.timing-card i {
-			font-size: 36px;
-			color: #FFD700;
-			margin-bottom: 15px;
-		}
-		
-		.timing-card h4 {
-			font-size: 20px;
-			margin-bottom: 10px;
-		}
-		
-		.timing-card p {
-			color: rgba(255,255,255,0.8);
-			font-size: 14px;
-		}
-		
-		.timing-card .time {
-			font-size: 28px;
-			font-weight: 700;
-			color: #FFD700;
-			margin-top: 15px;
-			display: block;
-		}
-		
-		/* Section 5: Jyotirlinga & Char Dham */
-		.pilgrimage-section {
-			padding: 80px 0;
-			background: #fff;
-		}
-		
-		.pilgrimage-tabs {
-			display: flex;
-			justify-content: center;
-			margin-bottom: 40px;
-		}
-		
-		.pilgrimage-tab {
-			padding: 15px 40px;
-			background: #FFEFE2;
-			border: none;
-			font-size: 18px;
-			font-weight: 600;
-			cursor: pointer;
-			transition: all 0.3s ease;
-			margin: 0 10px;
-			border-radius: 30px;
-		}
-		
-		.pilgrimage-tab.active {
-			background: #8B4513;
-			color: white;
-		}
-		
-		.pilgrimage-item {
-			display: flex;
-			align-items: center;
-			background: #FFEFE2;
-			border-radius: 15px;
-			padding: 20px;
-			margin-bottom: 20px;
-			transition: all 0.3s ease;
-		}
-		
-		.pilgrimage-item:hover {
-			transform: translateX(10px);
-			box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-		}
-		
-		.pilgrimage-item .item-number {
-			width: 60px;
-			height: 60px;
-			background: #8B4513;
-			color: white;
-			border-radius: 50%;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			font-size: 24px;
-			font-weight: 700;
-			margin-right: 20px;
-			flex-shrink: 0;
-		}
-		
-		.pilgrimage-item .item-content h4 {
-			color: #2C1810;
-			margin-bottom: 5px;
-		}
-		
-		.pilgrimage-item .item-content p {
-			color: #666;
-			font-size: 14px;
-		}
-		
-		/* Section 6: About */
-		.about-section {
-			padding: 80px 0;
-			background: #FFEFE2;
-		}
-		
-		.about-image {
-			position: relative;
-			border-radius: 20px;
-			overflow: hidden;
-		}
-		
-		.about-image img {
-			width: 100%;
-			height: auto;
-			display: block;
-		}
-		
-		.about-image::before {
-			content: '';
-			position: absolute;
-			top: -20px;
-			left: -20px;
-			width: 100%;
-			height: 100%;
-			border: 3px solid #8B4513;
-			border-radius: 20px;
-			z-index: -1;
-		}
-		
-		.about-content {
-			padding: 30px;
-		}
-		
-		.about-content h6 {
-			color: #8B4513;
-			font-weight: 600;
-			letter-spacing: 4px;
-			text-transform: uppercase;
-			margin-bottom: 15px;
-		}
-		
-		.about-content h2 {
-			font-size: 42px;
-			color: #2C1810;
-			margin-bottom: 20px;
-			line-height: 1.2;
-		}
-		
-		.about-content p {
-			color: #666;
-			line-height: 1.8;
-			margin-bottom: 20px;
-		}
-		
-		.about-content .btn-read {
-			display: inline-block;
-			padding: 15px 40px;
-			background: #8B4513;
-			color: white;
-			border-radius: 30px;
-			text-decoration: none;
-			font-weight: 600;
-			transition: all 0.3s ease;
-		}
-		
-		.about-content .btn-read:hover {
-			background: #5D2E0C;
-			transform: translateX(5px);
-		}
-		
-		/* Section 7: Gallery */
-		.gallery-section {
-			padding: 80px 0;
-			background: #fff;
-		}
-		
-		.gallery-grid {
-			display: grid;
-			grid-template-columns: repeat(4, 1fr);
-			gap: 15px;
-		}
-		
-		.gallery-item {
-			position: relative;
-			overflow: hidden;
-			border-radius: 10px;
-			aspect-ratio: 1;
-		}
-		
-		.gallery-item:first-child {
-			grid-column: span 2;
-			grid-row: span 2;
-		}
-		
-		.gallery-item img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			transition: all 0.5s ease;
-		}
-		
-		.gallery-item:hover img {
-			transform: scale(1.1);
-		}
-		
-		.gallery-item .gallery-overlay {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background: rgba(139, 69, 19, 0.8);
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			opacity: 0;
-			transition: all 0.3s ease;
-		}
-		
-		.gallery-item:hover .gallery-overlay {
-			opacity: 1;
-		}
-		
-		.gallery-item .gallery-overlay i {
-			color: white;
-			font-size: 30px;
-		}
-		
-		.gallery-cta {
-			text-align: center;
-			margin-top: 40px;
-		}
-		
-		.gallery-cta a {
-			display: inline-block;
-			padding: 15px 40px;
-			background: #8B4513;
-			color: white;
-			border-radius: 30px;
-			text-decoration: none;
-			font-weight: 600;
-			transition: all 0.3s ease;
-		}
-		
-		.gallery-cta a:hover {
-			background: #5D2E0C;
-		}
-		
-		/* Section 8: Events */
-		.events-section {
-			padding: 80px 0;
-			background: #FFEFE2;
-		}
-		
-		.event-card {
-			background: white;
-			border-radius: 15px;
-			overflow: hidden;
-			display: flex;
-			margin-bottom: 25px;
-			box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-			transition: all 0.3s ease;
-		}
-		
-		.event-card:hover {
-			transform: translateY(-5px);
-			box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-		}
-		
-		.event-date {
-			background: #8B4513;
-			color: white;
-			padding: 20px;
-			text-align: center;
-			min-width: 100px;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-		}
-		
-		.event-date .day {
-			font-size: 36px;
-			font-weight: 700;
-			line-height: 1;
-		}
-		
-		.event-date .month {
-			font-size: 14px;
-			text-transform: uppercase;
-			margin-top: 5px;
-		}
-		
-		.event-details {
-			padding: 25px;
-			flex: 1;
-		}
-		
-		.event-details h4 {
-			color: #2C1810;
-			margin-bottom: 10px;
-		}
-		
-		.event-details .event-time {
-			color: #8B4513;
-			font-size: 14px;
-			margin-bottom: 15px;
-			display: flex;
-			align-items: center;
-			gap: 10px;
-		}
-		
-		.event-details p {
-			color: #666;
-			font-size: 14px;
-			line-height: 1.6;
-		}
-		
-		.event-cta {
-			display: flex;
-			align-items: center;
-			padding-right: 25px;
-		}
-		
-		.event-cta a {
-			padding: 12px 25px;
-			border: 2px solid #8B4513;
-			color: #8B4513;
-			border-radius: 30px;
-			text-decoration: none;
-			font-weight: 600;
-			transition: all 0.3s ease;
-		}
-		
-		.event-cta a:hover {
-			background: #8B4513;
-			color: white;
-		}
-		
-		/* Section 9: Testimonials */
-		.testimonial-section {
-			padding: 80px 0;
-			background: linear-gradient(rgba(44, 24, 16, 0.95), rgba(44, 24, 16, 0.95)), url('photo/04banner.webp');
-			background-size: cover;
-			background-position: center;
-		}
-		
-		.testimonial-section .section-title h6,
-		.testimonial-section .section-title h2 {
-			color: white;
-		}
-		
-		.testimonial-card {
-			background: rgba(255,255,255,0.1);
-			backdrop-filter: blur(10px);
-			border-radius: 20px;
-			padding: 40px;
-			text-align: center;
-			color: white;
-			border: 1px solid rgba(255,255,255,0.2);
-		}
-		
-		.testimonial-card .quote-icon {
-			font-size: 40px;
-			color: #FFD700;
-			margin-bottom: 20px;
-		}
-		
-		.testimonial-card p {
-			font-size: 18px;
-			line-height: 1.8;
-			font-style: italic;
-			margin-bottom: 25px;
-		}
-		
-		.testimonial-card .author {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			gap: 15px;
-		}
-		
-		.testimonial-card .author-img {
-			width: 60px;
-			height: 60px;
-			border-radius: 50%;
-			background: #FFD700;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			font-size: 24px;
-			color: #8B4513;
-		}
-		
-		.testimonial-card .author-info h5 {
-			font-size: 18px;
-			margin-bottom: 5px;
-		}
-		
-		.testimonial-card .author-info span {
-			font-size: 14px;
-			color: rgba(255,255,255,0.7);
-		}
-		
-		/* Section 10: Contact */
-		.contact-section {
-			padding: 80px 0;
-			background: #FFEFE2;
-		}
-		
-		.contact-info {
-			background: #8B4513;
-			border-radius: 20px;
-			padding: 40px;
-			color: white;
-			height: 100%;
-		}
-		
-		.contact-info h6 {
-			color: #FFD700;
-			letter-spacing: 4px;
-			text-transform: uppercase;
-			margin-bottom: 15px;
-		}
-		
-		.contact-info h2 {
-			font-size: 36px;
-			margin-bottom: 25px;
-		}
-		
-		.contact-info p {
-			color: rgba(255,255,255,0.8);
-			line-height: 1.8;
-			margin-bottom: 30px;
-		}
-		
-		.contact-info-item {
-			display: flex;
-			align-items: center;
-			gap: 15px;
-			margin-bottom: 20px;
-		}
-		
-		.contact-info-item i {
-			width: 40px;
-			height: 40px;
-			background: rgba(255,255,255,0.2);
-			border-radius: 50%;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-		
-		.contact-form {
-			background: white;
-			border-radius: 20px;
-			padding: 40px;
-			box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-		}
-		
-		.contact-form .form-group {
-			margin-bottom: 20px;
-		}
-		
-		.contact-form input,
-		.contact-form textarea {
-			width: 100%;
-			padding: 15px 20px;
-			border: 2px solid #eee;
-			border-radius: 10px;
-			font-size: 16px;
-			transition: all 0.3s ease;
-		}
-		
-		.contact-form input:focus,
-		.contact-form textarea:focus {
-			border-color: #8B4513;
-			outline: none;
-		}
-		
-		.contact-form .btn-submit {
-			width: 100%;
-			padding: 18px;
-			background: #8B4513;
-			color: white;
-			border: none;
-			border-radius: 10px;
-			font-size: 18px;
-			font-weight: 600;
-			cursor: pointer;
-			transition: all 0.3s ease;
-		}
-		
-		.contact-form .btn-submit:hover {
-			background: #5D2E0C;
-		}
-		
-		/* Section 11: Newsletter */
-		.newsletter-section {
-			background: linear-gradient(135deg, #D4A574 0%, #8B4513 100%);
-			padding: 60px 0;
-			text-align: center;
-		}
-		
-		.newsletter-section h2 {
-			color: white;
-			margin-bottom: 15px;
-		}
-		
-		.newsletter-section p {
-			color: rgba(255,255,255,0.9);
-			margin-bottom: 30px;
-		}
-		
-		.newsletter-form {
-			max-width: 500px;
-			margin: 0 auto;
-			display: flex;
-			gap: 10px;
-		}
-		
-		.newsletter-form input {
-			flex: 1;
-			padding: 15px 25px;
-			border: none;
-			border-radius: 30px;
-			font-size: 16px;
-		}
-		
-		.newsletter-form button {
-			padding: 15px 35px;
-			background: #2C1810;
-			color: white;
-			border: none;
-			border-radius: 30px;
-			font-weight: 600;
-			cursor: pointer;
-			transition: all 0.3s ease;
-		}
-		
-		.newsletter-form button:hover {
-			background: #1a0f0a;
-		}
-		
-		/* Section 12: Footer */
-		.main-footer {
-			background: #2C1810;
-			padding: 60px 0 20px;
-			color: white;
-		}
-		
-		.footer-widget h4 {
-			color: #FFD700;
-			margin-bottom: 25px;
-			font-size: 20px;
-		}
-		
-		.footer-widget ul {
-			list-style: none;
-			padding: 0;
-		}
-		
-		.footer-widget ul li {
-			margin-bottom: 12px;
-		}
-		
-		.footer-widget ul li a {
-			color: rgba(255,255,255,0.7);
-			text-decoration: none;
-			transition: all 0.3s ease;
-		}
-		
-		.footer-widget ul li a:hover {
-			color: #FFD700;
-			padding-left: 10px;
-		}
-		
-		.footer-bottom {
-			border-top: 1px solid rgba(255,255,255,0.1);
-			margin-top: 40px;
-			padding-top: 20px;
-			text-align: center;
-			color: rgba(255,255,255,0.5);
-		}
-		
-		/* Responsive */
-		@media (max-width: 991px) {
-			.gallery-grid {
-				grid-template-columns: repeat(2, 1fr);
-			}
-			
-			.gallery-item:first-child {
-				grid-column: span 2;
-				grid-row: span 1;
-			}
-			
-			.about-content {
-				padding: 20px 0;
-			}
-			
-			.event-card {
-				flex-direction: column;
-			}
-			
-			.event-date {
-				flex-direction: row;
-				gap: 10px;
-				padding: 15px;
-				min-width: auto;
-			}
-			
-			.event-cta {
-				padding: 20px;
-			}
-		}
-		
-		@media (max-width: 768px) {
-			.section-title h2 {
-				font-size: 32px;
-			}
-			
-			.stats-item .counter {
-				font-size: 32px;
-			}
-			
-			.pilgrimage-tabs {
-				flex-wrap: wrap;
-			}
-			
-			.pilgrimage-tab {
-				padding: 12px 25px;
-				margin: 5px;
-			}
-			
-			.newsletter-form {
-				flex-direction: column;
-			}
-		}
-	</style>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="icon" href="photo/favicon.ico" type="image/x-icon">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KJ3NX7H5P2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-KJ3NX7H5P2');
+    </script>
+
+    <style>
+        /* Incredible India Color Scheme */
+        :root {
+            --primary-orange: #FF9933;
+            --secondary-orange: #FF7700;
+            --navy-blue: #000080;
+            --white: #FFFFFF;
+            --dark: #1D1D1D;
+            --light-gray: #F5F5F5;
+            --brown: #8B4513;
+            --light-orange: #FFE4B5;
+        }
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Section Titles */
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h6 {
+            color: var(--primary-orange);
+            font-weight: 600;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .section-title h2 {
+            font-size: 42px;
+            color: var(--dark);
+            font-weight: 700;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--primary-orange);
+            border-radius: 2px;
+        }
+
+        /* Hero Slider */
+        .hero-section {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-slider .slide {
+            position: relative;
+            height: 650px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-slider .slide::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%);
+        }
+
+        .slide-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            width: 100%;
+            max-width: 900px;
+            padding: 0 20px;
+        }
+
+        .slide-content h6 {
+            color: var(--primary-orange);
+            font-weight: 600;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .slide-content h1 {
+            font-size: 60px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .slide-content p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .slide-btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: var(--primary-orange);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary-orange);
+        }
+
+        .slide-btn:hover {
+            background: transparent;
+            color: white;
+            border-color: white;
+        }
+
+        .slider-overlay-text {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            background: linear-gradient(135deg, var(--navy-blue) 0%, #000060 100%);
+            padding: 50px 0;
+        }
+
+        .stats-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .stats-item i {
+            font-size: 40px;
+            color: var(--primary-orange);
+            margin-bottom: 15px;
+        }
+
+        .stats-item .counter {
+            font-size: 42px;
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+            color: white;
+            display: block;
+        }
+
+        .stats-item span {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: rgba(255,255,255,0.8);
+        }
+
+        /* Quick Links */
+        .quick-links-section {
+            padding: 80px 0;
+            background: var(--light-gray);
+        }
+
+        .quick-link-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+
+        .quick-link-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        .quick-link-card .card-image {
+            height: 220px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .quick-link-card .card-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        .quick-link-card:hover .card-overlay {
+            opacity: 1;
+        }
+
+        .quick-link-card .card-overlay a {
+            color: white;
+            font-size: 50px;
+            transform: scale(0);
+            transition: all 0.3s ease;
+        }
+
+        .quick-link-card:hover .card-overlay a {
+            transform: scale(1);
+        }
+
+        .quick-link-card .card-content {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .quick-link-card .card-content h3 {
+            color: var(--dark);
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        .quick-link-card .card-content p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .quick-link-card .card-content a {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--primary-orange);
+            color: white;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .quick-link-card .card-content a:hover {
+            background: var(--secondary-orange);
+        }
+
+        /* Darshan Timings */
+        .timings-section {
+            background: linear-gradient(rgba(0,0,128,0.9), rgba(0,0,80,0.9)), url('photo/04banner.webp');
+            background-size: cover;
+            background-position: center;
+            padding: 80px 0;
+            color: white;
+        }
+
+        .timing-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .timing-card:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-5px);
+        }
+
+        .timing-card i {
+            font-size: 36px;
+            color: var(--primary-orange);
+            margin-bottom: 15px;
+        }
+
+        .timing-card h4 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .timing-card p {
+            color: rgba(255,255,255,0.8);
+            font-size: 14px;
+        }
+
+        .timing-card .time {
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--primary-orange);
+            margin-top: 15px;
+            display: block;
+        }
+
+        /* Pilgrimage Section */
+        .pilgrimage-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .pilgrimage-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .pilgrimage-tab {
+            padding: 15px 35px;
+            background: var(--light-gray);
+            border: none;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 30px;
+            color: var(--dark);
+        }
+
+        .pilgrimage-tab.active {
+            background: var(--primary-orange);
+            color: white;
+        }
+
+        .pilgrimage-tab:hover:not(.active) {
+            background: #FFE4B5;
+        }
+
+        .pilgrimage-item {
+            display: flex;
+            align-items: center;
+            background: var(--light-gray);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .pilgrimage-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .pilgrimage-item .item-number {
+            width: 60px;
+            height: 60px;
+            background: var(--primary-orange);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+
+        .pilgrimage-item .item-content h4 {
+            color: var(--dark);
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+        .pilgrimage-item .item-content p {
+            color: #666;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 80px 0;
+            background: var(--light-gray);
+        }
+
+        .about-image {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .about-image::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: 100%;
+            height: 100%;
+            border: 4px solid var(--primary-orange);
+            border-radius: 20px;
+            z-index: -1;
+        }
+
+        .about-content {
+            padding: 30px;
+        }
+
+        .about-content h6 {
+            color: var(--primary-orange);
+            font-weight: 600;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .about-content h2 {
+            font-size: 38px;
+            color: var(--dark);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .about-content p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .about-content .btn-read {
+            display: inline-block;
+            padding: 15px 40px;
+            background: var(--primary-orange);
+            color: white;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .about-content .btn-read:hover {
+            background: var(--secondary-orange);
+        }
+
+        /* Gallery Section */
+        .gallery-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            aspect-ratio: 1;
+        }
+
+        .gallery-item:first-child {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255,153,51,0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-item .gallery-overlay i {
+            color: white;
+            font-size: 30px;
+        }
+
+        .gallery-cta {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .gallery-cta a {
+            display: inline-block;
+            padding: 15px 40px;
+            background: var(--primary-orange);
+            color: white;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .gallery-cta a:hover {
+            background: var(--secondary-orange);
+        }
+
+        /* Events Section */
+        .events-section {
+            padding: 80px 0;
+            background: var(--light-gray);
+        }
+
+        .event-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            display: flex;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .event-date {
+            background: var(--primary-orange);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            min-width: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .event-date .day {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .event-date .month {
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-top: 5px;
+        }
+
+        .event-details {
+            padding: 25px;
+            flex: 1;
+        }
+
+        .event-details h4 {
+            color: var(--dark);
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .event-details .event-time {
+            color: var(--primary-orange);
+            font-size: 14px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .event-details p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .event-cta {
+            display: flex;
+            align-items: center;
+            padding-right: 25px;
+        }
+
+        .event-cta a {
+            padding: 12px 25px;
+            border: 2px solid var(--primary-orange);
+            color: var(--primary-orange);
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .event-cta a:hover {
+            background: var(--primary-orange);
+            color: white;
+        }
+
+        /* Blog Section - NEW */
+        .blog-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        .blog-card .blog-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .blog-card .blog-category {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: var(--primary-orange);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .blog-card .blog-content {
+            padding: 25px;
+        }
+
+        .blog-card .blog-date {
+            color: #999;
+            font-size: 13px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .blog-card .blog-content h3 {
+            color: var(--dark);
+            font-size: 20px;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .blog-card .blog-content p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .blog-card .blog-link {
+            color: var(--primary-orange);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .blog-card .blog-link:hover {
+            gap: 15px;
+        }
+
+        /* Testimonials */
+        .testimonial-section {
+            padding: 80px 0;
+            background: linear-gradient(rgba(0,0,128,0.95), rgba(0,0,80,0.95)), url('photo/04banner.webp');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .testimonial-section .section-title h6,
+        .testimonial-section .section-title h2 {
+            color: white;
+        }
+
+        .testimonial-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            color: white;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .testimonial-card .quote-icon {
+            font-size: 40px;
+            color: var(--primary-orange);
+            margin-bottom: 20px;
+        }
+
+        .testimonial-card p {
+            font-size: 17px;
+            line-height: 1.8;
+            font-style: italic;
+            margin-bottom: 25px;
+        }
+
+        .testimonial-card .author {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .testimonial-card .author-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--primary-orange);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+        }
+
+        .testimonial-card .author-info h5 {
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: white;
+        }
+
+        .testimonial-card .author-info span {
+            font-size: 14px;
+            color: rgba(255,255,255,0.7);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 80px 0;
+            background: var(--light-gray);
+        }
+
+        .contact-info-box {
+            background: var(--navy-blue);
+            border-radius: 20px;
+            padding: 40px;
+            color: white;
+            height: 100%;
+        }
+
+        .contact-info-box h6 {
+            color: var(--primary-orange);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .contact-info-box h2 {
+            font-size: 32px;
+            margin-bottom: 25px;
+            color: white;
+        }
+
+        .contact-info-box p {
+            color: rgba(255,255,255,0.8);
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .contact-info-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info-item i {
+            width: 45px;
+            height: 45px;
+            background: rgba(255,153,51,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-orange);
+        }
+
+        .contact-form {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px 20px;
+            border: 2px solid #eee;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: var(--primary-orange);
+            outline: none;
+        }
+
+        .contact-form .btn-submit {
+            width: 100%;
+            padding: 18px;
+            background: var(--primary-orange);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .contact-form .btn-submit:hover {
+            background: var(--secondary-orange);
+        }
+
+        /* Newsletter */
+        .newsletter-section {
+            background: linear-gradient(135deg, var(--primary-orange) 0%, var(--secondary-orange) 100%);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .newsletter-section h2 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .newsletter-section p {
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 30px;
+        }
+
+        .newsletter-form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            gap: 10px;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+        }
+
+        .newsletter-form button {
+            padding: 15px 35px;
+            background: var(--navy-blue);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .newsletter-form button:hover {
+            background: var(--dark);
+        }
+
+        /* Responsive */
+        @media (max-width: 991px) {
+            .slide-content h1 {
+                font-size: 42px;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .gallery-item:first-child {
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+
+            .about-content {
+                padding: 20px 0;
+            }
+
+            .event-card {
+                flex-direction: column;
+            }
+
+            .event-date {
+                flex-direction: row;
+                gap: 10px;
+                padding: 15px;
+                min-width: auto;
+            }
+
+            .event-cta {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .slide-content h1 {
+                font-size: 32px;
+            }
+
+            .slide-content h6 {
+                letter-spacing: 3px;
+                font-size: 14px;
+            }
+
+            .section-title h2 {
+                font-size: 32px;
+            }
+
+            .stats-item .counter {
+                font-size: 32px;
+            }
+
+            .pilgrimage-tabs {
+                flex-wrap: wrap;
+            }
+
+            .pilgrimage-tab {
+                padding: 12px 25px;
+                margin: 5px;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+            }
+
+            .blog-card .blog-image {
+                height: 180px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-	<!-- Header -->
-	<div id="header"></div>
+    <!-- Header -->
+    <div id="header"></div>
 
-	<!-- Section 1: Hero Slider -->
-	<header class="container-fuild main-page hero-section">
-		<div class="owl-carousel owl-theme">
-			<div class="slider01 s-box">
-				<div class="tra001">
-					<h6>WELCOME TO</h6>
-					<h1>Divine Hindu Temples<br>and Sacred Yatras</h1>
-					<p style="color:#fdd6e3; max-width:650px; margin:10px auto 25px;">
-						Plan your darshan, explore ancient temples, and experience the spiritual heritage of India with
-						carefully curated information, galleries, and events.
-					</p>
-					<div class="mf01">
-						<a href="#darshan">View Darshan Timings</a>
-					</div>
-				</div>
-			</div>
-			<div class="slider02 s-box">
-				<div class="tra001">
-					<h6>JYOTIRLINGA & CHAR DHAM</h6>
-					<h1>Discover India's<br>Most Revered Shrines</h1>
-					<p style="color:#fdd6e3; max-width:650px; margin:10px auto 25px;">
-						Get an overview of Jyotirlingas, Char Dham routes, nearby places, and important travel details
-						before you begin your yatra.
-					</p>
-					<div class="mf01">
-						<a href="#pilgrimage">Explore Temples</a>
-					</div>
-				</div>
-			</div>
-			<div class="slider03 s-box">
-				<div class="tra001">
-					<h6>EVENTS & FESTIVALS</h6>
-					<h1>Stay Updated With<br>Upcoming Poojas & Sevas</h1>
-					<p style="color:#fdd6e3; max-width:650px; margin:10px auto 25px;">
-						From daily aarti to annual utsavs, track what's happening and participate in upcoming temple
-						events around you.
-					</p>
-					<div class="mf01">
-						<a href="#events">View All Events</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+    <!-- Hero Slider -->
+    <section class="hero-section">
+        <div class="owl-carousel owl-theme hero-slider">
+            <div class="slide" style="background-image: url('photo/owl03.webp');">
+                <div class="slide-content">
+                    <h6>WELCOME TO</h6>
+                    <h1>Divine Hindu Temples<br>and Sacred Yatras</h1>
+                    <p>Plan your darshan, explore ancient temples, and experience the spiritual heritage of India with carefully curated information, galleries, and events.</p>
+                    <a href="#featured" class="slide-btn">Explore Now</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('photo/owl01.webp');">
+                <div class="slide-content">
+                    <h6>JYOTIRLINGA & CHAR DHAM</h6>
+                    <h1>Discover India's<br>Most Revered Shrines</h1>
+                    <p>Get an overview of Jyotirlingas, Char Dham routes, nearby places, and important travel details before you begin your yatra.</p>
+                    <a href="#pilgrimage" class="slide-btn">Explore Temples</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('photo/e01.webp');">
+                <div class="slide-content">
+                    <h6>EVENTS & FESTIVALS</h6>
+                    <h1>Stay Updated With<br>Upcoming Poojas & Sevas</h1>
+                    <p>From daily aarti to annual utsavs, track what's happening and participate in upcoming temple events around you.</p>
+                    <a href="#events" class="slide-btn">View Events</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Section 2: Quick Stats -->
-	<section class="stats-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-					<div class="stats-item">
-						<i class="fas fa-temple-hindu"></i>
-						<span class="counter">500+</span>
-						<span>Temples Listed</span>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-					<div class="stats-item">
-						<i class="fas fa-users"></i>
-						<span class="counter">1M+</span>
-						<span>Monthly Visitors</span>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-					<div class="stats-item">
-						<i class="fas fa-calendar-alt"></i>
-						<span class="counter">200+</span>
-						<span>Annual Events</span>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-					<div class="stats-item">
-						<i class="fas fa-star"></i>
-						<span class="counter">50+</span>
-						<span>Years of Service</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="stats-item">
+                        <i class="fas fa-temple-hindu"></i>
+                        <span class="counter">500+</span>
+                        <span>Temples Listed</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="stats-item">
+                        <i class="fas fa-users"></i>
+                        <span class="counter">1M+</span>
+                        <span>Monthly Visitors</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="stats-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span class="counter">200+</span>
+                        <span>Annual Events</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="stats-item">
+                        <i class="fas fa-star"></i>
+                        <span class="counter">50+</span>
+                        <span>Years of Service</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Section 3: Highlights / Featured -->
-	<section class="highlights-section" id="featured-temples">
-		<div class="container">
-			<div class="section-title">
-				<h6>HIGHLIGHTS</h6>
-				<h2>Popular Temples, Yatras & Spiritual Experiences</h2>
-			</div>
-			<div class="row">
-				<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-					<div class="highlight-card">
-						<div class="card-image" style="background-image: url('photo/01.webp');">
-							<div class="card-overlay">
-								<a href="aashram"><i class="fas fa-plus"></i></a>
-							</div>
-						</div>
-						<div class="card-content">
-							<h3>Famous Temples</h3>
-							<p>Read about iconic Jyotirlinga, Shakti Peeth, and other renowned temples across India.</p>
-							<a href="aashram">View Temples</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-					<div class="highlight-card">
-						<div class="card-image" style="background-image: url('photo/02.webp');">
-							<div class="card-overlay">
-								<a href="event"><i class="fas fa-plus"></i></a>
-							</div>
-						</div>
-						<div class="card-content">
-							<h3>Upcoming Yatras</h3>
-							<p>Stay informed about important yatras, special poojas, and seasonal festivities.</p>
-							<a href="event">View Events</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-					<div class="highlight-card">
-						<div class="card-image" style="background-image: url('photo/03.webp');">
-							<div class="card-overlay">
-								<a href="gallery"><i class="fas fa-plus"></i></a>
-							</div>
-						</div>
-						<div class="card-content">
-							<h3>Temple Gallery</h3>
-							<p>Experience the beauty of deities, mandirs, and festivals through our curated gallery.</p>
-							<a href="gallery">View Photos</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <!-- Quick Links / Featured -->
+    <section class="quick-links-section" id="featured">
+        <div class="container">
+            <div class="section-title">
+                <h6>HIGHLIGHTS</h6>
+                <h2>Popular Temples, Yatras & Spiritual Experiences</h2>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="quick-link-card">
+                        <div class="card-image" style="background-image: url('photo/01.webp');">
+                            <div class="card-overlay">
+                                <a href="aashram.html"><i class="fas fa-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Famous Temples</h3>
+                            <p>Read about iconic Jyotirlinga, Shakti Peeth, and other renowned temples across India.</p>
+                            <a href="aashram.html">View Temples</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="quick-link-card">
+                        <div class="card-image" style="background-image: url('photo/02.webp');">
+                            <div class="card-overlay">
+                                <a href="event.html"><i class="fas fa-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Upcoming Yatras</h3>
+                            <p>Stay informed about important yatras, special poojas, and seasonal festivities.</p>
+                            <a href="event.html">View Events</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="quick-link-card">
+                        <div class="card-image" style="background-image: url('photo/03.webp');">
+                            <div class="card-overlay">
+                                <a href="gallery.html"><i class="fas fa-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Temple Gallery</h3>
+                            <p>Experience the beauty of deities, mandirs, and festivals through our curated gallery.</p>
+                            <a href="gallery.html">View Photos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Section 4: Darshan Timings -->
-	<section class="timings-section" id="darshan">
-		<div class="container">
-			<div class="section-title">
-				<h6>DHARSHAN TIMINGS</h6>
-				<h2>Plan Your Visit</h2>
-			</div>
-			<div class="row">
-				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-					<div class="timing-card">
-						<i class="fas fa-sun"></i>
-						<h4>Morning Darshan</h4>
-						<p>Start your spiritual journey</p>
-						<span class="time">5:00 AM - 12:00 PM</span>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-					<div class="timing-card">
-						<i class="fas fa-temperature-high"></i>
-						<h4>Afternoon Break</h4>
-						<p>Temple closure period</p>
-						<span class="time">12:00 PM - 3:00 PM</span>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-					<div class="timing-card">
-						<i class="fas fa-moon"></i>
-						<h4>Evening Darshan</h4>
-						<p>Evening aarti & darshan</p>
-						<span class="time">3:00 PM - 9:00 PM</span>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-					<div class="timing-card">
-						<i class="fas fa-pray"></i>
-						<h4>Special Aarti</h4>
-						<p>Daily special rituals</p>
-						<span class="time">7:00 PM & 8:30 PM</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <!-- Darshan Timings -->
+    <section class="timings-section" id="darshan">
+        <div class="container">
+            <div class="section-title">
+                <h6>DHARSHAN TIMINGS</h6>
+                <h2>Plan Your Visit</h2>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="timing-card">
+                        <i class="fas fa-sun"></i>
+                        <h4>Morning Darshan</h4>
+                        <p>Start your spiritual journey</p>
+                        <span class="time">5:00 AM - 12:00 PM</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="timing-card">
+                        <i class="fas fa-temperature-high"></i>
+                        <h4>Afternoon Break</h4>
+                        <p>Temple closure period</p>
+                        <span class="time">12:00 PM - 3:00 PM</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="timing-card">
+                        <i class="fas fa-moon"></i>
+                        <h4>Evening Darshan</h4>
+                        <p>Evening aarti & darshan</p>
+                        <span class="time">3:00 PM - 9:00 PM</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="timing-card">
+                        <i class="fas fa-pray"></i>
+                        <h4>Special Aarti</h4>
+                        <p>Daily special rituals</p>
+                        <span class="time">7:00 PM & 8:30 PM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Section 5: Jyotirlinga & Char Dham -->
-	<section class="pilgrimage-section" id="pilgrimage">
-		<div class="container">
-			<div class="section-title">
-				<h6>PILGRIMAGE</h6>
-				<h2>Sacred Destinations</h2>
-			</div>
-			<div class="pilgrimage-tabs">
-				<button class="pilgrimage-tab active" onclick="showTab('jyotirlinga')">Jyotirlinga</button>
-				<button class="pilgrimage-tab" onclick="showTab('chardham')">Char Dham</button>
-				<button class="pilgrimage-tab" onclick="showTab('shakti')">Shakti Peeth</button>
-			</div>
-			<div class="row">
-				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-					<h3 style="margin-bottom: 25px; color: #2C1810;">The 12 Jyotirlingas</h3>
-					<div class="pilgrimage-item">
-						<div class="item-number">1</div>
-						<div class="item-content">
-							<h4>Somnath - Gujarat</h4>
-							<p>The first and most sacred Jyotirlinga</p>
-						</div>
-					</div>
-					<div class="pilgrimage-item">
-						<div class="item-number">2</div>
-						<div class="item-content">
-							<h4>Mahakaleshwar - Madhya Pradesh</h4>
-							<p>One of the 12 Jyotirlingas in Ujjain</p>
-						</div>
-					</div>
-					<div class="pilgrimage-item">
-						<div class="item-number">3</div>
-						<div class="item-content">
-							<h4>Kedarnath - Uttarakhand</h4>
-							<p>Highest of the 12 Jyotirlingas</p>
-						</div>
-					</div>
-					<div class="pilgrimage-item">
-						<div class="item-number">4</div>
-						<div class="item-content">
-							<h4>Kashi Vishwanath - Varanasi</h4>
-							<p>The most sacred temple in Varanasi</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-					<h3 style="margin-bottom: 25px; color: #2C1810;">Char Dham Yatra</h3>
-					<div class="pilgrimage-item">
-						<div class="item-number" style="background: #D4A574;">B</div>
-						<div class="item-content">
-							<h4>Badrinath - Uttarakhand</h4>
-							<p>The abode of Lord Vishnu</p>
-						</div>
-					</div>
-					<div class="pilgrimage-item">
-						<div class="item-number" style="background: #D4A574;">D</div>
-						<div class="item-content">
-							<h4>Dwarka - Gujarat</h4>
-							<p>The kingdom of Lord Krishna</p>
-						</div>
-					</div>
-					<div class="pilgrimage-item">
-						<div class="item-number" style="background: #D4A574;">P</div>
-						<div class="item-content">
-							<h4>Puri - Odisha</h4>
-							<p>Home of Lord Jagannath</p>
-						</div>
-					</div>
-					<div class="pilgrimage-item">
-						<div class="item-number" style="background: #D4A574;">R</div>
-						<div class="item-content">
-							<h4>Rameshwaram - Tamil Nadu</h4>
-							<p>The southernmost Char Dham</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <!-- Pilgrimage Section -->
+    <section class="pilgrimage-section" id="pilgrimage">
+        <div class="container">
+            <div class="section-title">
+                <h6>PILGRIMAGE</h6>
+                <h2>Sacred Destinations</h2>
+            </div>
+            <div class="pilgrimage-tabs">
+                <button class="pilgrimage-tab active" onclick="showTab('jyotirlinga')">Jyotirlinga</button>
+                <button class="pilgrimage-tab" onclick="showTab('chardham')">Char Dham</button>
+                <button class="pilgrimage-tab" onclick="showTab('shakti')">Shakti Peeth</button>
+            </div>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <h3 style="margin-bottom: 25px; color: var(--dark); font-size: 24px;">The 12 Jyotirlingas</h3>
+                    <div class="pilgrimage-item">
+                        <div class="item-number">1</div>
+                        <div class="item-content">
+                            <h4>Somnath - Gujarat</h4>
+                            <p>The first and most sacred Jyotirlinga</p>
+                        </div>
+                    </div>
+                    <div class="pilgrimage-item">
+                        <div class="item-number">2</div>
+                        <div class="item-content">
+                            <h4>Mahakaleshwar - Madhya Pradesh</h4>
+                            <p>One of the 12 Jyotirlingas in Ujjain</p>
+                        </div>
+                    </div>
+                    <div class="pilgrimage-item">
+                        <div class="item-number">3</div>
+                        <div class="item-content">
+                            <h4>Kedarnath - Uttarakhand</h4>
+                            <p>Highest of the 12 Jyotirlingas</p>
+                        </div>
+                    </div>
+                    <div class="pilgrimage-item">
+                        <div class="item-number">4</div>
+                        <div class="item-content">
+                            <h4>Kashi Vishwanath - Varanasi</h4>
+                            <p>The most sacred temple in Varanasi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <h3 style="margin-bottom: 25px; color: var(--dark); font-size: 24px;">Char Dham Yatra</h3>
+                    <div class="pilgrimage-item">
+                        <div class="item-number" style="background: var(--navy-blue);">B</div>
+                        <div class="item-content">
+                            <h4>Badrinath - Uttarakhand</h4>
+                            <p>The abode of Lord Vishnu</p>
+                        </div>
+                    </div>
+                    <div class="pilgrimage-item">
+                        <div class="item-number" style="background: var(--navy-blue);">D</div>
+                        <div class="item-content">
+                            <h4>Dwarka - Gujarat</h4>
+                            <p>The kingdom of Lord Krishna</p>
+                        </div>
+                    </div>
+                    <div class="pilgrimage-item">
+                        <div class="item-number" style="background: var(--navy-blue);">P</div>
+                        <div class="item-content">
+                            <h4>Puri - Odisha</h4>
+                            <p>Home of Lord Jagannath</p>
+                        </div>
+                    </div>
+                    <div class="pilgrimage-item">
+                        <div class="item-number" style="background: var(--navy-blue);">R</div>
+                        <div class="item-content">
+                            <h4>Rameshwaram - Tamil Nadu</h4>
+                            <p>The southernmost Char Dham</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Section 6: About -->
-	<section class="about-section" id="about">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-					<div class="about-image">
-						<img src="photo/04.webp" alt="Hindu temple view" loading="lazy">
-					</div>
-				</div>
-				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-					<div class="about-content">
-						<h6>ABOUT THIS PLATFORM</h6>
-						<h2>Connecting Devotees With Temples Across India</h2>
-						<p>
-							This website is dedicated to devotees who wish to learn about sacred Hindu temples, important
-							yatras, and spiritual events. Discover temple histories, explore photo galleries, and plan your
-							visit with practical information on darshan timings, festivals, and nearby attractions.
-						</p>
-						<p style="color:darkgray;">
-							Whether you are planning a pilgrimage or simply seeking divine inspiration, our aim is to bring
-							the temple experience closer to you.
-						</p>
-						<a href="aashram" class="btn-read">Read More</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="about-image">
+                        <img src="photo/04.webp" alt="Hindu temple view" loading="lazy">
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="about-content">
+                        <h6>ABOUT THIS PLATFORM</h6>
+                        <h2>Connecting Devotees With Temples Across India</h2>
+                        <p>
+                            This website is dedicated to devotees who wish to learn about sacred Hindu temples, important yatras, and spiritual events. Discover temple histories, explore photo galleries, and plan your visit with practical information on darshan timings, festivals, and nearby attractions.
+                        </p>
+                        <p style="color: #888;">
+                            Whether you are planning a pilgrimage or simply seeking divine inspiration, our aim is to bring the temple experience closer to you.
+                        </p>
+                        <a href="aashram.html" class="btn-read">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Section 7: Gallery -->
-	<section class="gallery-section" id="gallery">
-		<div class="container">
-			<div class="section-title">
-				<h6>GALLERY</h6>
-				<h2>Experience the Divine Beauty</h2>
-			</div>
-			<div class="gallery-grid">
-				<div class="gallery-item">
-					<img src="photo/g01.webp" alt="Temple gallery" loading="lazy">
-					<div class="gallery-overlay">
-						<i class="fas fa-images"></i>
-					</div>
-				</div>
-				<div class="gallery-item">
-					<img src="photo/g02.webp" alt="Temple gallery" loading="lazy">
-					<div class="gallery-overlay">
-						<i class="fas fa-images"></i>
-					</div>
-				</div>
-				<div class="gallery-item">
-					<img src="photo/g03.webp" alt="Temple gallery" loading="lazy">
-					<div class="gallery-overlay">
-						<i class="fas fa-images"></i>
-					</div>
-				</div>
-				<div class="gallery-item">
-					<img src="photo/g04.webp" alt="Temple gallery" loading="lazy">
-					<div class="gallery-overlay">
-						<i class="fas fa-images"></i>
-					</div>
-				</div>
-				<div class="gallery-item">
-					<img src="photo/g05.webp" alt="Temple gallery" loading="lazy">
-					<div class="gallery-overlay">
-						<i class="fas fa-images"></i>
-					</div>
-				</div>
-				<div class="gallery-item">
-					<img src="photo/g-photo01.webp" alt="Temple gallery" loading="lazy">
-					<div class="gallery-overlay">
-						<i class="fas fa-images"></i>
-					</div>
-				</div>
-			</div>
-			<div class="gallery-cta">
-				<a href="gallery">View Full Gallery</a>
-			</div>
-		</div>
-	</section>
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h6>GALLERY</h6>
+                <h2>Experience the Divine Beauty</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="photo/g01.webp" alt="Temple gallery" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-images"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="photo/g02.webp" alt="Temple gallery" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-images"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="photo/g03.webp" alt="Temple gallery" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-images"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="photo/g04.webp" alt="Temple gallery" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-images"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="photo/g05.webp" alt="Temple gallery" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-images"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="photo/g-photo01.webp" alt="Temple gallery" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-images"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-cta">
+                <a href="gallery.html">View Full Gallery</a>
+            </div>
+        </div>
+    </section>
 
-	<!-- Section 8: Events -->
-	<section class="events-section" id="events">
-		<div class="container">
-			<div class="section-title">
-				<h6>EVENTS</h6>
-				<h2>Upcoming Events & Festivals</h2>
-			</div>
-			<div class="row">
-				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-					<div class="event-card">
-						<div class="event-date">
-							<span class="day">11</span>
-							<span class="month">May</span>
-						</div>
-						<div class="event-details">
-							<h4>Special Morning Aarti & Abhishekam</h4>
-							<div class="event-time">
-								<i class="fas fa-clock"></i> Daily from 6:00 am to 8:00 am
-							</div>
-							<p>Join us for the special morning aarti and abhishekam ceremony.</p>
-						</div>
-						<div class="event-cta">
-							<a href="#">More Info</a>
-						</div>
-					</div>
-					<div class="event-card">
-						<div class="event-date">
-							<span class="day">12</span>
-							<span class="month">May</span>
-						</div>
-						<div class="event-details">
-							<h4>Monthly Purnima Satsang & Bhajan</h4>
-							<div class="event-time">
-								<i class="fas fa-clock"></i> Every Purnima evening
-							</div>
-							<p>Special full moon day celebrations with devotional singing.</p>
-						</div>
-						<div class="event-cta">
-							<a href="#">More Info</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-					<div class="event-card">
-						<div class="event-date">
-							<span class="day">13</span>
-							<span class="month">May</span>
-						</div>
-						<div class="event-details">
-							<h4>Festival of Lights - Deepawali</h4>
-							<div class="event-time">
-								<i class="fas fa-clock"></i> Annual celebration
-							</div>
-							<p>Celebrate the festival of lights with special pooja and fireworks.</p>
-						</div>
-						<div class="event-cta">
-							<a href="#">More Info</a>
-						</div>
-					</div>
-					<div class="event-card">
-						<div class="event-date">
-							<span class="day">14</span>
-							<span class="month">May</span>
-						</div>
-						<div class="event-details">
-							<h4>Mahashivratri Night Jagran</h4>
-							<div class="event-time">
-								<i class="fas fa-clock"></i> All-night celebration
-							</div>
-							<p>All-night bhajan and darshan on the sacred night of Mahashivratri.</p>
-						</div>
-						<div class="event-cta">
-							<a href="#">More Info</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <!-- Events Section -->
+    <section class="events-section" id="events">
+        <div class="container">
+            <div class="section-title">
+                <h6>EVENTS</h6>
+                <h2>Upcoming Events & Festivals</h2>
+            </div>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">11</span>
+                            <span class="month">May</span>
+                        </div>
+                        <div class="event-details">
+                            <h4>Special Morning Aarti & Abhishekam</h4>
+                            <div class="event-time">
+                                <i class="fas fa-clock"></i> Daily from 6:00 am to 8:00 am
+                            </div>
+                            <p>Join us for the special morning aarti and abhishekam ceremony.</p>
+                        </div>
+                        <div class="event-cta">
+                            <a href="#">More Info</a>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">12</span>
+                            <span class="month">May</span>
+                        </div>
+                        <div class="event-details">
+                            <h4>Monthly Purnima Satsang & Bhajan</h4>
+                            <div class="event-time">
+                                <i class="fas fa-clock"></i> Every Purnima evening
+                            </div>
+                            <p>Special full moon day celebrations with devotional singing.</p>
+                        </div>
+                        <div class="event-cta">
+                            <a href="#">More Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">13</span>
+                            <span class="month">May</span>
+                        </div>
+                        <div class="event-details">
+                            <h4>Festival of Lights - Deepawali</h4>
+                            <div class="event-time">
+                                <i class="fas fa-clock"></i> Annual celebration
+                            </div>
+                            <p>Celebrate the festival of lights with special pooja and fireworks.</p>
+                        </div>
+                        <div class="event-cta">
+                            <a href="#">More Info</a>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">14</span>
+                            <span class="month">May</span>
+                        </div>
+                        <div class="event-details">
+                            <h4>Mahashivratri Night Jagran</h4>
+                            <div class="event-time">
+                                <i class="fas fa-clock"></i> All-night celebration
+                            </div>
+                            <p>All-night bhajan and darshan on the sacred night of Mahashivratri.</p>
+                        </div>
+                        <div class="event-cta">
+                            <a href="#">More Info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Section 9: Testimonials -->
-	<section class="testimonial-section">
-		<div class="container">
-			<div class="section-title">
-				<h6>TESTIMONIALS</h6>
-				<h2>What Devotees Say</h2>
-			</div>
-			<div class="row">
-				<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-					<div class="testimonial-card">
-						<div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-						<p>"This website helped me plan my Char Dham yatra perfectly. All the information about darshan timings and accommodations was accurate and helpful."</p>
-						<div class="author">
-							<div class="author-img"><i class="fas fa-user"></i></div>
-							<div class="author-info">
-								<h5>Rajesh Sharma</h5>
-								<span>Delhi</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-					<div class="testimonial-card">
-						<div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-						<p>"The gallery section is beautiful! I could virtually experience the divine architecture of temples before visiting them in person."</p>
-						<div class="author">
-							<div class="author-img"><i class="fas fa-user"></i></div>
-							<div class="author-info">
-								<h5>Priya Menon</h5>
-								<span>Mumbai</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-					<div class="testimonial-card">
-						<div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-						<p>"Thanks to the event updates, I never miss any important festival. The detailed information about poojas and sevas is excellent."</p>
-						<div class="author">
-							<div class="author-img"><i class="fas fa-user"></i></div>
-							<div class="author-info">
-								<h5>Anil Patel</h5>
-								<span>Ahmedabad</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <!-- Blog Section - NEW -->
+    <section class="blog-section" id="blog">
+        <div class="container">
+            <div class="section-title">
+                <h6>BLOG</h6>
+                <h2>Latest Articles & Spiritual Insights</h2>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="blog-card">
+                        <div class="blog-image" style="background-image: url('photo/01.webp');">
+                            <span class="blog-category">Temple</span>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date">
+                                <i class="fas fa-calendar"></i> May 10, 2026
+                            </div>
+                            <h3>Top 10 Jyotirlingas to Visit in 2026</h3>
+                            <p>Discover the most sacred Jyotirlingas and plan your spiritual journey across India.</p>
+                            <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="blog-card">
+                        <div class="blog-image" style="background-image: url('photo/02.webp');">
+                            <span class="blog-category">Festival</span>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date">
+                                <i class="fas fa-calendar"></i> May 8, 2026
+                            </div>
+                            <h3>Guide to Celebrating Diwali at Temples</h3>
+                            <p>Everything you need to know about Diwali celebrations and special aartis at temples.</p>
+                            <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="blog-card">
+                        <div class="blog-image" style="background-image: url('photo/03.webp');">
+                            <span class="blog-category">Travel</span>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date">
+                                <i class="fas fa-calendar"></i> May 5, 2026
+                            </div>
+                            <h3>Char Dham Yatra: Complete Travel Guide</h3>
+                            <p>Plan your Char Dham pilgrimage with tips on best time, accommodation, and routes.</p>
+                            <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-cta">
+                <a href="#">View All Blogs</a>
+            </div>
+        </div>
+    </section>
 
-	<!-- Section 10: Contact -->
-	<section class="contact-section" id="contact">
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-					<div class="contact-info">
-						<h6>GET IN TOUCH</h6>
-						<h2>Plan Your Visit & Connect With Us</h2>
-						<p>Find darshan timings, special aarti schedules, and send us your queries about temples, yatras, or events.</p>
-						<div class="contact-info-item">
-							<i class="fas fa-map-marker-alt"></i>
-							<span>Nayapura Chokha, Jodhpur</span>
-						</div>
-						<div class="contact-info-item">
-							<i class="fas fa-phone"></i>
-							<span>+91 7357346016</span>
-						</div>
-						<div class="contact-info-item">
-							<i class="fas fa-envelope"></i>
-							<span>lalit979932@gmail.com</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
-					<form class="contact-form" id="contactFormIndex" action="https://formsubmit.co/lalit979932@gmail.com" method="POST" onsubmit="handleFormSubmit(event, 'contactFormIndex')">
-						<input type="hidden" name="_subject" value="New Contact Form Submission from Website">
-						<input type="hidden" name="_captcha" value="false">
-						<input type="hidden" name="_next" value="">
-						<input type="hidden" name="_template" value="box">
-						<div class="row">
-							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-								<div class="form-group">
-									<input type="text" name="name" placeholder="Your Name" required>
-								</div>
-							</div>
-							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-								<div class="form-group">
-									<input type="email" name="email" placeholder="Your Email" required>
-								</div>
-							</div>
-						</div>
-						<div class="form-group">
-							<input type="text" name="subject" placeholder="City / Temple you want to know about" required>
-						</div>
-						<div class="form-group">
-							<textarea name="message" placeholder="Write your message or question here" rows="4" required></textarea>
-						</div>
-						<button type="submit" class="btn-submit">Send Message</button>
-						<div id="formMessageIndex" style="margin-top: 15px; padding: 10px; display: none; border-radius: 5px;"></div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>
+    <!-- Testimonials -->
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="section-title">
+                <h6>TESTIMONIALS</h6>
+                <h2>What Devotees Say</h2>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>"This website helped me plan my Char Dham yatra perfectly. All the information about darshan timings and accommodations was accurate and helpful."</p>
+                        <div class="author">
+                            <div class="author-img"><i class="fas fa-user"></i></div>
+                            <div class="author-info">
+                                <h5>Rajesh Sharma</h5>
+                                <span>Delhi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>"The gallery section is beautiful! I could virtually experience the divine architecture of temples before visiting them in person."</p>
+                        <div class="author">
+                            <div class="author-img"><i class="fas fa-user"></i></div>
+                            <div class="author-info">
+                                <h5>Priya Menon</h5>
+                                <span>Mumbai</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>"Thanks to the event updates, I never miss any important festival. The detailed information about poojas and sevas is excellent."</p>
+                        <div class="author">
+                            <div class="author-img"><i class="fas fa-user"></i></div>
+                            <div class="author-info">
+                                <h5>Anil Patel</h5>
+                                <span>Ahmedabad</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Section 11: Newsletter -->
-	<section class="newsletter-section">
-		<div class="container">
-			<h2>Subscribe to Our Newsletter</h2>
-			<p>Get the latest updates on temples, festivals, and spiritual events delivered to your inbox.</p>
-			<form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
-				<input type="email" placeholder="Enter your email address" required>
-				<button type="submit">Subscribe</button>
-			</form>
-		</div>
-	</section>
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                    <div class="contact-info-box">
+                        <h6>GET IN TOUCH</h6>
+                        <h2>Plan Your Visit & Connect With Us</h2>
+                        <p>Find darshan timings, special aarti schedules, and send us your queries about temples, yatras, or events.</p>
+                        <div class="contact-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Nayapura Chokha, Jodhpur</span>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 7357346016</span>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>lalit979932@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+                    <form class="contact-form" id="contactFormIndex" action="https://formsubmit.co/lalit979932@gmail.com" method="POST" onsubmit="handleFormSubmit(event, 'contactFormIndex')">
+                        <input type="hidden" name="_subject" value="New Contact Form Submission from Website">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="">
+                        <input type="hidden" name="_template" value="box">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="form-group">
+                                    <input type="text" name="name" placeholder="Your Name" required>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="form-group">
+                                    <input type="email" name="email" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="City / Temple you want to know about" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Write your message or question here" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Message</button>
+                        <div id="formMessageIndex" style="margin-top: 15px; padding: 10px; display: none; border-radius: 5px;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Section 12: Footer -->
-	<footer class="main-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-					<div class="footer-widget">
-						<h4>Quick Links</h4>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="aashram.html">Temples</a></li>
-							<li><a href="gallery.html">Gallery</a></li>
-							<li><a href="event.html">Events</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-					<div class="footer-widget">
-						<h4>Temples</h4>
-						<ul>
-							<li><a href="#">Jyotirlinga</a></li>
-							<li><a href="#">Char Dham</a></li>
-							<li><a href="#">Shakti Peeth</a></li>
-							<li><a href="#">Vaishnav Temples</a></li>
-							<li><a href="#">Shiv Temples</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-					<div class="footer-widget">
-						<h4>Resources</h4>
-						<ul>
-							<li><a href="#">Darshan Timings</a></li>
-							<li><a href="#">Festival Calendar</a></li>
-							<li><a href="#">Travel Guide</a></li>
-							<li><a href="#">Pooja Details</a></li>
-							<li><a href="#">Accommodation</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-					<div class="footer-widget">
-						<h4>Connect</h4>
-						<ul>
-							<li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-							<li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-							<li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-							<li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="footer-bottom">
-				<p>&copy; 2026 OneMovie Temple | Created by Lalit Kachhawaha</p>
-			</div>
-		</div>
-	</footer>
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get the latest updates on temples, festivals, and spiritual events delivered to your inbox.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
 
-	<!-- Fixed Icons -->
-	<section class="icons">
-		<ul>
-			<li><a href="https://api.whatsapp.com/send?phone=7357346016&text=what'sapp%20number"><img src="photo/w.webp" alt="WhatsApp"></a></li>
-			<li class="back-top"><a href="#"><img src="photo/u.webp" alt="Back to top"></a></li>
-		</ul>
-	</section>
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class="footer-widget">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aashram.html">Temples</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="event.html">Events</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class="footer-widget">
+                        <h4>Temples</h4>
+                        <ul>
+                            <li><a href="#">Jyotirlinga</a></li>
+                            <li><a href="#">Char Dham</a></li>
+                            <li><a href="#">Shakti Peeth</a></li>
+                            <li><a href="#">Vaishnav Temples</a></li>
+                            <li><a href="#">Shiv Temples</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class="footer-widget">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Darshan Timings</a></li>
+                            <li><a href="#">Festival Calendar</a></li>
+                            <li><a href="#">Travel Guide</a></li>
+                            <li><a href="#">Pooja Details</a></li>
+                            <li><a href="#">Accommodation</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class="footer-widget">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 OneMovie Temple | Created by Lalit Kachhawaha</p>
+            </div>
+        </div>
+    </footer>
 
-	<!-- Scripts -->
-	<script defer src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-	<script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-	<script defer src="js/owl.carousel.js"></script>
-	<script src="app.js" defer></script>
-	
-	<script>
-		// Tab functionality for pilgrimage section
-		function showTab(tabName) {
-			// Remove active class from all tabs
-			document.querySelectorAll('.pilgrimage-tab').forEach(tab => {
-				tab.classList.remove('active');
-			});
-			// Add active class to clicked tab
-			event.target.classList.add('active');
-		}
+    <!-- Fixed Icons -->
+    <section class="icons">
+        <ul>
+            <li><a href="https://api.whatsapp.com/send?phone=7357346016&text=whatsapp%20number"><img src="photo/w.webp" alt="WhatsApp"></a></li>
+            <li class="back-top"><a href="#"><img src="photo/u.webp" alt="Back to top"></a></li>
+        </ul>
+    </section>
 
-		// Include header and footer
-		async function includeHTML(id, file) {
-			const res = await fetch(file);
-			const text = await res.text();
-			document.getElementById(id).innerHTML = text;
-		}
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="app.js"></script>
 
-		includeHTML("header", "header.html");
-	</script>
+    <script>
+        // Hero Slider
+        $('.hero-slider').owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 0,
+            nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            animateOut: 'fadeOut',
+            animateIn: 'fadeIn',
+            smartSpeed: 1000,
+            navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']
+        });
 
-	<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        // Tab functionality
+        function showTab(tabName) {
+            document.querySelectorAll('.pilgrimage-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+
+        // Include header
+        async function includeHTML(id, file) {
+            try {
+                const res = await fetch(file);
+                const text = await res.text();
+                document.getElementById(id).innerHTML = text;
+            } catch (e) {
+                console.log('Error loading header:', e);
+            }
+        }
+
+        includeHTML("header", "header.html");
+    </script>
+
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 
