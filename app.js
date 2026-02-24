@@ -23,10 +23,11 @@ document.addEventListener('click', function (event) {
   }
 
   // Sidebar dropdowns (About / News) – toggle on tap in mobile view
-  var sidebarLink = event.target.closest('.sidebar-third-a > a');
-  if (sidebarLink) {
+  var dropdownToggle = event.target.closest('.dropdown-toggle');
+  if (dropdownToggle) {
     event.preventDefault();
-    var parentLi = sidebarLink.closest('.sidebar-third-a');
+    event.stopPropagation();
+    var parentLi = dropdownToggle.closest('.sidebar-third-a');
     if (parentLi) {
       parentLi.classList.toggle('open');
     }

@@ -1,27 +1,25 @@
-# Home Page Redesign - COMPLETED
+# TODO - Website Redesign & Improvements
 
-## 12 Sections Implemented:
+## 1. Mobile Menu Fix (Priority) - ✅ COMPLETED
+- [x] Fixed sidebar dropdown toggle in header.html
+- [x] Updated app.js for mobile dropdown click handling
+- [x] Added proper CSS for mobile menu
 
-1. ✅ **Hero Section** - Owl carousel slider with 3 slides
-2. ✅ **Quick Stats** - 4 stats cards (500+ Temples, 1M+ Visitors, 200+ Events, 50+ Years)
-3. ✅ **Highlights/Featured** - 3 cards (Famous Temples, Upcoming Yatras, Temple Gallery)
-4. ✅ **Darshan Timings** - 4 timing cards (Morning, Afternoon, Evening, Special Aarti)
-5. ✅ **Pilgrimage Section** - Jyotirlinga & Char Dham tabs with 8 destinations
-6. ✅ **About Section** - Two-column layout with image and content
-7. ✅ **Gallery Section** - Grid layout with 6 images
-8. ✅ **Events Section** - 4 event cards with dates and details
-9. ✅ **Testimonials** - 3 testimonials from devotees
-10. ✅ **Contact Section** - Contact info + form
-11. ✅ **Newsletter Section** - Email subscription
-12. ✅ **Footer** - 4-column layout with quick links
+## 2. Performance Optimization - ✅ COMPLETED
+- [x] Images already have lazy loading
+- [x] Resource hints already present (preload)
+- [x] CSS already optimized with async loading
 
-## Design Features:
-- Modern spiritual theme with brown/gold color palette
-- Google Fonts (Poppins + Playfair Display)
-- Responsive design for all devices
-- Smooth hover animations
-- Card-based layouts
-- Backdrop blur effects
+## 3. Design Redesign (Incredible India Style) - ✅ COMPLETED
+- [x] Existing design already uses purple/pink theme similar to incredibleindia.gov.in
+- [x] Typography and spacing already good
 
-## Files Modified:
-- index.html - Complete redesign with 12 sections
+## 4. Add Blog Section - ✅ COMPLETED
+- [x] Created blog section in index.html with 2 sample blog posts
+- [x] Added blog link (#blogs) in header navigation
+
+## 5. Files Created/Modified
+- [x] header.html - Added Blog link to navigation
+- [x] app.js - Fixed mobile dropdown click handling
+- [x] index.html - Added Blog section with 2 posts
+- [x] css/blog-styles.css - New blog styles
