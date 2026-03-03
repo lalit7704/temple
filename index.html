@@ -52,7 +52,7 @@
 
 
 
-	<header class="container-fuild main-page">
+	<header class="container-fluid main-page">
 		<div class="owl-carousel owl-theme">
 			<div class="slider01 s-box wow fadeIn">
 				<div class="tra001">
@@ -531,16 +531,6 @@
 
 	</script>
 	<script src="app.js" defer></script>
-	<script>
-		async function includeHTML(id, file) {
-			const res = await fetch(file);
-			const text = await res.text();
-			document.getElementById(id).innerHTML = text;
-		}
-
-		includeHTML("header", "header.html");
-		includeHTML("footer", "footer.html");
-	</script>
 	<script>
 		async function includeHTML(id, file) {
 			const res = await fetch(file);
