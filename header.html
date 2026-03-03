@@ -1,3 +1,42 @@
+<header class="header-wrapper">
+    <!-- Quick Action Icons -->
+    <section class="quick-actions">
+        <ul>
+            <li><a href="https://api.whatsapp.com/send?phone=7357346016&text=Namaste%20from%20Temple%20Website" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li class="back-top-btn"><a href="#" title="Back to Top"><i class="fa-solid fa-arrow-up"></i></a></li>
+        </ul>
+    </section>
+
+    <!-- Top Info Bar -->
+    <div class="header-top">
+        <div class="container-fluid">
+            <div class="top-info-wrapper">
+                <div class="info-left">
+                    <span><i class="fa-solid fa-location-dot"></i> Nayapura Chokha, Jodhpur</span>
+                    <span><i class="fa-solid fa-phone"></i> <a href="tel:7357346016">+91 735-734-6016</a></span>
+                </div>
+                <div class="info-right">
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <div id="google_translate_element"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="navbar-main">
+        <div class="container-fluid">
+            <div class="navbar-content">
+                <!-- Logo -->
+                <div class="navbar-logo">
+                    <a href="/" title="Home">
+                        <img src="photo/logo-2.webp" alt="Temple Logo">
+                    </a>
 <header>
     <!-- Fixed Icons -->
     <section class="fixed-icons">
@@ -72,41 +111,78 @@
                     </ul>
                     <a href="#" class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></a>
                 </div>
-            </div>
-        </div>
-    </nav>
-    <section class="side-bar col-sm-12 col-12">
-        <div class="croseicon"> <a href="#" class="close"><i class="fa-solid fa-xmark"></i></a> </div>
-        <div class="side-bar-img"> <img src="photo/logo-3.webp"> </div>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="aashram">Ashram</a></li>
-            <li><a href="#blogs">Blog</a></li>
-            <li class="sidebar-third-a"><a href="javascript:void(0)" class="dropdown-toggle">About <i class="fa-solid fa-angle-down"></i>
-                    <div class="sidebar-about-submenu-01">
-                        <ul>
+
+                <!-- Desktop Menu -->
+                <ul class="navbar-menu desktop-menu">
+                    <li><a href="/">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-link">About <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
                             <li><a href="aashram">Ashram</a></li>
                             <li><a href="project">Programs</a></li>
                             <li><a href="gallery">Gallery</a></li>
                             <li><a href="#">Leadership</a></li>
                         </ul>
-                    </div>
-                </a></li>
-            <li><a href="collection">Shop All</a></li>
+                    </li>
+                    <li><a href="collection">Shop</a></li>
+                    <li><a href="event">Events</a></li>
+                    <li><a href="gallery">Gallery</a></li>
+                    <li><a href="#blogs">Blog</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-link">More <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Resources</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+
+                <!-- Mobile Menu Toggle -->
+                <div class="navbar-toggle">
+                    <a href="#" class="menu-toggle" title="Menu"><i class="fa-solid fa-bars"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <img src="photo/logo-3.webp" alt="Temple Logo" class="mobile-logo">
+            <button class="close-menu"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <ul class="mobile-menu-list">
+            <li><a href="/">Home</a></li>
+            <li class="mobile-dropdown">
+                <a href="#" class="dropdown-trigger">About <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="aashram">Ashram</a></li>
+                    <li><a href="project">Programs</a></li>
+                    <li><a href="gallery">Gallery</a></li>
+                    <li><a href="#">Leadership</a></li>
+                </ul>
+            </li>
+            <li><a href="collection">Shop</a></li>
             <li><a href="event">Events</a></li>
             <li><a href="gallery">Gallery</a></li>
-            <li class="sidebar-third-a"><a href="javascript:void(0)" class="dropdown-toggle">News <i class="fa-solid fa-angle-down"></i>
-                    <div class="sidebar-about-submenu-02">
-                        <ul>
-                            <li><a href="#">Posts</a></li>
-                            <li><a href="#">Classic</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Chess</a></li>
-                        </ul>
-                    </div>
-                </a></li>
-            <li><a href="contact">Contacts</a></li>
+            <li><a href="#blogs">Blog</a></li>
+            <li class="mobile-dropdown">
+                <a href="#" class="dropdown-trigger">More <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Resources</a></li>
+                </ul>
+            </li>
+            <li><a href="contact">Contact</a></li>
         </ul>
+
+        <div class="mobile-search">
+            <input type="text" placeholder="Search..." class="search-input">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
         <div class="sidebar-search">
             <input type="text" placeholder="Search...">
             <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
@@ -117,5 +193,15 @@
             <a href="#"><i class="fa-brands fa-twitter"></i></a>
             <a href="#"><i class="fa-brands fa-youtube"></i></a>
         </div>
-    </section>
+
+        <div class="mobile-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </div>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay"></div>
 </header>
