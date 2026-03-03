@@ -472,47 +472,37 @@
 
 
 	<script>
-
-
-
 		$(document).ready(function () {
-
-
-
-			$('.bar').click(function () {
-				$(".side-bar").toggleClass("slide01");
-			});
-
-			$('.close').click(function () {
-				$(".side-bar").toggleClass("slide01");
-			});
-
-
+			// Initialize Owl Carousel
 			$(".owl-carousel").owlCarousel({
 				items: 1,
 				loop: true,
 				mouseDrag: true,
-				nav: true,
-				dots: true,
+				nav: false,
+				dots: false,
 				autoplay: true,
-				autoplayTimeout: 3000,
-				// autoplayHoverPause:true,
-
+				autoplayTimeout: 5000,
+				autoplayHoverPause: false,
+				animateOut: 'fadeOut',
+				animateIn: 'fadeIn'
 			});
 
-
+			// Back to top functionality
 			$(window).scroll(function () {
 				var x = $(window).scrollTop();
-				if (x > 50) {
-					$('.back-top').addClass('h');
-				} else { $('.back-top').removeClass('h'); }
+				if (x > 300) {
+					$('.back-top-btn').addClass('show');
+				} else { 
+					$('.back-top-btn').removeClass('show'); 
+				}
 			});
 
-
-			$(".back-top").click(function () {
+			$(".back-top-btn a").click(function (e) {
+				e.preventDefault();
 				$("html, body").animate({ scrollTop: 0 }, 1000);
 			});
-
+		});
+	</script>
 
 
 
