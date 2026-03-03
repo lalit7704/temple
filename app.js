@@ -1,59 +1,96 @@
-// Global header & sidebar interactions (pure JavaScript, works on all pages)
+// ===== HEADER INTERACTIONS - NEW REDESIGN =====
 
-// Toggle mobile sidebar open/close
-document.addEventListener('click', function (event) {
-  var bar = event.target.closest('.bar');
-  if (bar) {
-    event.preventDefault();
-    var sidebar = document.querySelector('.side-bar');
-    if (sidebar) {
-      sidebar.classList.toggle('slide01');
-    }
-    return;
+// Mobile Menu Toggle
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const mobileOverlay = document.querySelector('.mobile-overlay');
+  const closeMenu = document.querySelector('.close-menu');
+  
+  // Toggle mobile menu
+  if (menuToggle) {
+    menuToggle.addEventListener('click', function(e) {
+      e.preventDefault();
+      mobileMenu?.classList.toggle('active');
+      mobileOverlay?.classList.toggle('active');
+      document.body.style.overflow = mobileMenu?.classList.contains('active') ? 'hidden' : '';
+    });
   }
-
-  var closeBtn = event.target.closest('.close');
-  if (closeBtn) {
-    event.preventDefault();
-    var sidebarClose = document.querySelector('.side-bar');
-    if (sidebarClose) {
-      sidebarClose.classList.toggle('slide01');
-    }
-    return;
+  
+  // Close menu button
+  if (closeMenu) {
+    closeMenu.addEventListener('click', function(e) {
+      e.preventDefault();
+      mobileMenu?.classList.remove('active');
+      mobileOverlay?.classList.remove('active');
+      document.body.style.overflow = '';
+    });
   }
-
-  // Sidebar dropdowns (About / News) – toggle on tap in mobile view
-  var dropdownToggle = event.target.closest('.dropdown-toggle');
-  if (dropdownToggle) {
-    event.preventDefault();
-    event.stopPropagation();
-    var parentLi = dropdownToggle.closest('.sidebar-third-a');
-    if (parentLi) {
-      parentLi.classList.toggle('open');
-    }
-    return;
+  
+  // Close menu on overlay click
+  if (mobileOverlay) {
+    mobileOverlay.addEventListener('click', function() {
+      mobileMenu?.classList.remove('active');
+      mobileOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+    });
   }
+  
+  // Mobile dropdown menus
+  const dropdownTriggers = document.querySelectorAll('.dropdown-trigger');
+  dropdownTriggers.forEach(trigger => {
+    trigger.addEventListener('click', function(e) {
+      e.preventDefault();
+      const parentLi = this.closest('.mobile-dropdown');
+      const submenu = parentLi?.querySelector('.mobile-submenu');
+      
+      // Close other open dropdowns
+      document.querySelectorAll('.mobile-dropdown').forEach(li => {
+        if (li !== parentLi) {
+          li.classList.remove('open');
+        }
+      });
+      
+      // Toggle current dropdown
+      parentLi?.classList.toggle('open');
+    });
+  });
+  
+  // Close mobile menu when clicking a link
+  const mobileLinks = document.querySelectorAll('.mobile-menu-list a');
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      // Don't close for dropdown triggers
+      if (!this.classList.contains('dropdown-trigger')) {
+        mobileMenu?.classList.remove('active');
+        mobileOverlay?.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+  });
+});
 
-  // Back to top button
-  var backTop = event.target.closest('.back-top');
-  if (backTop) {
-    event.preventDefault();
+// Back to Top Button
+window.addEventListener('scroll', function() {
+  const backTopBtn = document.querySelector('.back-top-btn');
+  if (!backTopBtn) return;
+  
+  if (window.scrollY > 300) {
+    backTopBtn.classList.add('show');
+  } else {
+    backTopBtn.classList.remove('show');
+  }
+});
+
+// Back to top click handler
+document.addEventListener('click', function(e) {
+  const backTopLink = e.target.closest('.back-top-btn a');
+  if (backTopLink) {
+    e.preventDefault();
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     });
-  }
-});
-
-// Show / hide back-to-top on scroll
-window.addEventListener('scroll', function () {
-  var backTopBtn = document.querySelector('.back-top');
-  if (!backTopBtn) return;
-
-  if (window.scrollY > 50) {
-    backTopBtn.classList.add('h');
-  } else {
-    backTopBtn.classList.remove('h');
   }
 });
 
